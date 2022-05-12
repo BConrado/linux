@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#cp $BASE_DIR/../custom-scripts/S41network-config $BASE_DIR/target/etc/init.d
+#chmod +x $BASE_DIR/target/etc/init.d/S41network-config
+
+export PATH=$PATH:~/LabSisop/linuxdistro/buildroot/output/host/bin
+
+chmod +x ~/LabSisop/linuxdistro/buildroot/output/target/usr/bin/testhello
+
+make -C ~/LabSisop/linuxdistro/buildroot/modules/simple_driver/
+

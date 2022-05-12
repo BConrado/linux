@@ -1,0 +1,3291 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make -C ../../output/build/linux-custom M=$PWD
+ 
+# make[1]: Entering directory '/home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom'
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon May  9 21:18:36 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 1573)
+quiet_cmd_tags = GEN     $@
+# makefile (from 'include/config/auto.conf', line 663)
+CONFIG_LEGACY_PTY_COUNT = 256
+# makefile (from 'include/config/auto.conf', line 266)
+CONFIG_SCSI_PROC_FS = y
+# makefile (from 'scripts/Kbuild.include', line 276)
+cmd_and_fixdep = $(echo-cmd) $(cmd_$(1)); scripts/basic/fixdep $(depfile) $@ '$(make-cmd)' > $(dot-target).tmp; rm -f $(depfile); mv -f $(dot-target).tmp $(dot-target).cmd;
+# makefile (from 'include/config/auto.conf', line 566)
+ 
+CONFIG_X86_THERMAL_VECTOR = y
+# automatic
+?F = $(notdir $?)
+# makefile (from 'include/config/auto.conf', line 353)
+CONFIG_FS_MBCACHE = y
+# makefile (from 'arch/x86/Makefile', line 204)
+sp-y := esp
+# makefile (from 'include/config/auto.conf', line 783)
+CONFIG_X86_L1_CACHE_SHIFT = 5
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# makefile (from 'include/config/auto.conf', line 198)
+CONFIG_X86_CMOV = y
+# automatic
+-*-command-variables-*- := M=/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile (from 'Makefile', line 373)
+AFLAGS_KERNEL = 
+# makefile (from 'include/config/auto.conf', line 569)
+CONFIG_CLOCKSOURCE_WATCHDOG = y
+# makefile (from 'scripts/Kbuild.include', line 55)
+filechk = 	$(Q)set -e; $(kecho) '  CHK     $@'; mkdir -p $(dir $@); $(filechk_$(1)) < $< > $@.tmp; if [ -r $@ ] && cmp -s $@ $@.tmp; then rm -f $@.tmp; else $(kecho) '  UPD     $@'; mv -f $@.tmp $@; fi
+# makefile (from 'include/config/auto.conf', line 55)
+CONFIG_UEVENT_HELPER_PATH = ""
+# makefile (from 'include/config/auto.conf', line 399)
+CONFIG_SND_JACK_INPUT_DEV = y
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 2)
+PATCHLEVEL = 13
+# makefile (from 'include/config/auto.conf', line 229)
+CONFIG_GENERIC_CLOCKEVENTS = y
+# makefile (from 'include/config/auto.conf', line 511)
+CONFIG_CRYPTO = y
+# makefile (from 'include/config/auto.conf', line 466)
+CONFIG_SND_HDA = y
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from 'include/config/auto.conf', line 479)
+CONFIG_SPARSEMEM_STATIC = y
+# makefile (from 'include/config/auto.conf', line 324)
+CONFIG_MEMBARRIER = y
+# makefile (from 'include/config/auto.conf', line 495)
+CONFIG_INET_TCP_DIAG = y
+# makefile (from 'include/config/auto.conf', line 762)
+CONFIG_ARCH_WANT_FRAME_POINTERS = y
+# makefile (from 'include/config/auto.conf', line 79)
+CONFIG_FRAMEBUFFER_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 772)
+CONFIG_ARCH_USES_PG_UNCACHED = y
+# makefile (from 'include/config/auto.conf', line 453)
+CONFIG_NET_FLOW_LIMIT = y
+# makefile (from 'Makefile', line 307)
+HOST_LOADLIBES := 
+# makefile (from 'include/config/auto.conf', line 662)
+CONFIG_SERIAL_8250_EXAR = y
+# makefile (from 'include/config/auto.conf', line 668)
+CONFIG_MTRR_SANITIZER = y
+# makefile (from 'include/config/auto.conf', line 805)
+CONFIG_HAVE_MEMBLOCK = y
+# makefile (from 'include/config/auto.conf', line 149)
+CONFIG_BLOCK = y
+# makefile (from 'include/config/auto.conf', line 691)
+CONFIG_DRM_FBDEV_EMULATION = y
+# makefile (from 'Makefile', line 371)
+LDFLAGS_MODULE = 
+# automatic
+@F = $(notdir $@)
+# makefile (from 'include/config/auto.conf', line 390)
+CONFIG_MII = y
+# makefile
+CURDIR := /home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom
+# command line
+M = /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile (from 'scripts/Kbuild.include', line 10)
+space_escape := _-_SPACE_-_
+# makefile (from 'include/config/auto.conf', line 370)
+CONFIG_X86_NEED_RELOCS = y
+# makefile (from 'Makefile', line 81)
+Q = @
+# makefile (from 'include/config/auto.conf', line 476)
+CONFIG_NET_VENDOR_SUN = y
+# makefile (from 'include/config/auto.conf', line 685)
+CONFIG_VIRTIO_MMIO = y
+# makefile (from 'include/config/auto.conf', line 660)
+CONFIG_NET_VENDOR_INTEL = y
+# makefile (from 'include/config/auto.conf', line 472)
+CONFIG_NET_VENDOR_ATHEROS = y
+# makefile (from 'Makefile', line 432)
+MODVERDIR := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello/.tmp_versions
+# makefile (from 'include/config/auto.conf', line 220)
+CONFIG_INET6_XFRM_MODE_TUNNEL = y
+# makefile (from 'include/config/auto.conf', line 261)
+CONFIG_HAVE_ARCH_KMEMCHECK = y
+# makefile (from 'include/config/auto.conf', line 426)
+CONFIG_FREEZER = y
+# environment
+_ = /usr/share/code/code
+# makefile (from 'include/config/auto.conf', line 670)
+CONFIG_MUTEX_SPIN_ON_OWNER = y
+# makefile (from 'include/config/auto.conf', line 275)
+CONFIG_SLABINFO = y
+# makefile (from 'include/config/auto.conf', line 422)
+CONFIG_INET = y
+# makefile (from 'arch/x86/Makefile', line 205)
+sp- := rsp
+# makefile (from 'include/config/auto.conf', line 106)
+CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS = y
+# makefile (from 'include/config/auto.conf', line 645)
+CONFIG_BLK_MQ_VIRTIO = y
+# makefile (from 'scripts/Kbuild.include', line 149)
+cc-fullversion = $(shell $(CONFIG_SHELL) $(srctree)/scripts/gcc-version.sh -p $(CC))
+# makefile (from 'include/config/auto.conf', line 745)
+CONFIG_BALLOON_COMPACTION = y
+# makefile (from 'include/config/auto.conf', line 226)
+CONFIG_HIGHMEM = y
+# makefile (from 'include/config/auto.conf', line 463)
+CONFIG_AUTOFS4_FS = y
+# makefile (from 'Makefile', line 837)
+KBUILD_LDFLAGS_MODULE := -T ./scripts/module-common.lds --build-id
+# makefile (from 'include/config/auto.conf', line 704)
+CONFIG_NET_NS = y
+# makefile (from 'include/config/auto.conf', line 7)
+CONFIG_SCSI_DMA = y
+# makefile (from 'include/config/auto.conf', line 136)
+CONFIG_X86_MPPARSE = y
+# makefile (from 'include/config/auto.conf', line 571)
+CONFIG_NET_VENDOR_STMICRO = y
+# makefile (from 'include/config/auto.conf', line 205)
+CONFIG_INET_XFRM_MODE_BEET = y
+# makefile (from 'include/config/auto.conf', line 378)
+CONFIG_NET_VENDOR_AMD = y
+# makefile (from 'include/config/auto.conf', line 28)
+CONFIG_X86_MINIMUM_CPU_FAMILY = 5
+# makefile (from 'include/config/auto.conf', line 475)
+CONFIG_DMIID = y
+# makefile (from 'include/config/auto.conf', line 157)
+CONFIG_BUG = y
+# makefile (from 'include/config/auto.conf', line 799)
+CONFIG_SND_DMA_SGBUF = y
+# makefile (from '.vmlinux.cmd', line 1)
+MAKEFILE_LIST :=  Makefile scripts/Kbuild.include include/config/auto.conf arch/x86/Makefile arch/x86/Makefile_32.cpu scripts/Makefile.gcc-plugins scripts/Makefile.kasan scripts/Makefile.extrawarn scripts/Makefile.ubsan .vmlinux.cmd
+# makefile (from 'include/config/auto.conf', line 146)
+CONFIG_HAVE_SETUP_PER_CPU_AREA = y
+# makefile (from 'Makefile', line 688)
+stackp-flag :=  -fno-stack-protector
+# makefile (from 'include/config/auto.conf', line 167)
+CONFIG_ZONE_DMA = y
+# makefile (from 'Makefile', line 626)
+ARCH_CPPFLAGS := 
+# makefile (from 'include/config/auto.conf', line 787)
+CONFIG_GENERIC_CLOCKEVENTS_MIN_ADJUST = y
+# makefile (from 'Makefile', line 372)
+CFLAGS_KERNEL = 
+# makefile (from 'include/config/auto.conf', line 510)
+CONFIG_HAVE_PCSPKR_PLATFORM = y
+# makefile (from 'include/config/auto.conf', line 379)
+CONFIG_HAVE_KERNEL_LZ4 = y
+# makefile (from 'include/config/auto.conf', line 454)
+CONFIG_LOCKDEP_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 722)
+CONFIG_NET_RX_BUSY_POLL = y
+# makefile (from 'include/config/auto.conf', line 597)
+CONFIG_FRAME_WARN = 1024
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'include/config/auto.conf', line 92)
+CONFIG_MIGRATION = y
+# makefile (from 'include/config/auto.conf', line 38)
+CONFIG_ARCH_FLATMEM_ENABLE = y
+# makefile (from 'include/config/auto.conf', line 171)
+CONFIG_FB_SYS_COPYAREA = y
+# makefile (from 'Makefile', line 200)
+srctree := .
+# makefile (from 'Makefile', line 858)
+INSTALL_PATH = /boot
+# makefile (from 'include/config/auto.conf', line 734)
+CONFIG_FLAT_NODE_MEM_MAP = y
+# makefile (from 'include/config/auto.conf', line 519)
+CONFIG_HAVE_DMA_API_DEBUG = y
+# makefile (from 'Makefile', line 1699)
+cmd_rmfiles = rm -f $(rm-files)
+# makefile (from 'include/config/auto.conf', line 75)
+CONFIG_ETHERNET = y
+# makefile (from 'scripts/Kbuild.include', line 146)
+cc-version = $(shell $(CONFIG_SHELL) $(srctree)/scripts/gcc-version.sh $(CC))
+# makefile (from 'include/config/auto.conf', line 342)
+CONFIG_VIRT_TO_BUS = y
+# makefile (from 'include/config/auto.conf', line 429)
+CONFIG_NET_VENDOR_CHELSIO = y
+# makefile (from 'include/config/auto.conf', line 307)
+CONFIG_QUEUED_RWLOCKS = y
+# makefile (from 'include/config/auto.conf', line 491)
+CONFIG_GENERIC_BUG = y
+# makefile (from 'include/config/auto.conf', line 374)
+CONFIG_VM_EVENT_COUNTERS = y
+# makefile (from 'include/config/auto.conf', line 641)
+CONFIG_BLK_SCSI_REQUEST = y
+# makefile (from 'include/config/auto.conf', line 639)
+CONFIG_DEFAULT_IO_DELAY_TYPE = 0
+# makefile (from 'include/config/auto.conf', line 176)
+CONFIG_VGA_ARB_MAX_GPUS = 16
+# makefile (from 'include/config/auto.conf', line 773)
+CONFIG_NET_VENDOR_CAVIUM = y
+# makefile (from 'include/config/auto.conf', line 282)
+CONFIG_ACPI_HOTPLUG_IOAPIC = y
+# makefile (from 'include/config/auto.conf', line 735)
+CONFIG_VT_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 290)
+CONFIG_TMPFS = y
+# makefile (from 'include/config/auto.conf', line 15)
+CONFIG_I2C_BOARDINFO = y
+# makefile (from 'include/config/auto.conf', line 591)
+CONFIG_I2C_ALGOBIT = y
+# makefile (from 'Makefile', line 389)
+LINUXINCLUDE := -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h
+# environment
+SSH_AGENT_PID = 1227
+# makefile (from 'include/config/auto.conf', line 517)
+CONFIG_USB_XHCI_HCD = y
+# makefile (from 'include/config/auto.conf', line 392)
+CONFIG_NET_CORE = y
+# makefile (from 'include/config/auto.conf', line 102)
+CONFIG_INPUT_MOUSE = y
+# makefile (from 'include/config/auto.conf', line 315)
+CONFIG_ARCH_SUPPORTS_MEMORY_FAILURE = y
+# makefile (from 'include/config/auto.conf', line 238)
+CONFIG_ACPI_CPU_FREQ_PSS = y
+# makefile (from 'include/config/auto.conf', line 124)
+CONFIG_OUTPUT_FORMAT = "elf32-i386"
+# makefile (from 'scripts/Kbuild.include', line 14)
+dot-target = $(dir $@).$(notdir $@)
+# makefile (from 'include/config/auto.conf', line 263)
+CONFIG_ELFCORE = y
+# makefile (from 'include/config/auto.conf', line 666)
+CONFIG_NET_VENDOR_CISCO = y
+# makefile (from 'include/config/auto.conf', line 424)
+CONFIG_PREVENT_FIRMWARE_BUILD = y
+# makefile (from 'include/config/auto.conf', line 394)
+CONFIG_HAVE_UNSTABLE_SCHED_CLOCK = y
+# makefile (from 'scripts/Kbuild.include', line 312)
+if_changed_rule = $(if $(strip $(any-prereq) $(arg-check) ), @set -e; $(rule_$(1)), @:)
+# makefile (from 'include/config/auto.conf', line 31)
+CONFIG_ARCH_SUSPEND_POSSIBLE = y
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'include/config/auto.conf', line 765)
+CONFIG_STRICT_MODULE_RWX = y
+# makefile (from 'include/config/auto.conf', line 43)
+CONFIG_NET_VENDOR_QUALCOMM = y
+# makefile (from 'Makefile', line 352)
+CPP = $(CC) -E
+# makefile (from 'include/config/auto.conf', line 504)
+CONFIG_X86_FEATURE_NAMES = y
+# makefile (from 'Makefile', line 287)
+hdr-arch := x86
+# makefile (from 'include/config/auto.conf', line 113)
+CONFIG_NET_VENDOR_DLINK = y
+# makefile (from 'include/config/auto.conf', line 85)
+CONFIG_MODULES_USE_ELF_REL = y
+# makefile (from 'include/config/auto.conf', line 10)
+CONFIG_NEED_PER_CPU_EMBED_FIRST_CHUNK = y
+# makefile (from 'include/config/auto.conf', line 652)
+CONFIG_THERMAL = y
+# environment
+SBX_CHROME_API_RQ = 1
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# makefile (from 'include/config/auto.conf', line 265)
+CONFIG_BINFMT_ELF = y
+# makefile (from 'include/config/auto.conf', line 45)
+CONFIG_NET_VENDOR_EZCHIP = y
+# makefile (from 'include/config/auto.conf', line 659)
+CONFIG_X86_PM_TIMER = y
+# makefile (from 'Makefile', line 4)
+EXTRAVERSION = 
+# environment
+ 
+PATH = /home/labredes/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/labredes/.local/bin:/home/labredes/Downloads/riscv32-unknown-elf/gcc/bin:/home/labredes/Downloads/riscv32-unknown-elf/gcc/bin:/home/labredes/.local/bin
+# makefile (from 'Makefile', line 1703)
+cmd_depmod = $(CONFIG_SHELL) $(srctree)/scripts/depmod.sh $(DEPMOD) $(KERNELRELEASE) "$(patsubst y,_,$(CONFIG_HAVE_UNDERSCORE_SYMBOL_PREFIX))"
+# makefile (from 'Makefile', line 405)
+KBUILD_AFLAGS_KERNEL := 
+# makefile (from 'include/config/auto.conf', line 786)
+CONFIG_FILE_LOCKING = y
+# makefile (from 'include/config/auto.conf', line 561)
+CONFIG_LOCALVERSION_AUTO = y
+# makefile (from 'include/config/auto.conf', line 737)
+CONFIG_MQ_IOSCHED_KYBER = y
+# makefile (from 'arch/x86/Makefile', line 6)
+KBUILD_DEFCONFIG := x86_64_defconfig
+# makefile (from 'include/config/auto.conf', line 414)
+CONFIG_ACPI_SLEEP = y
+# makefile (from 'Makefile', line 306)
+HOSTLDFLAGS := 
+# makefile (from 'include/config/auto.conf', line 236)
+CONFIG_SND_X86 = y
+# makefile (from 'include/config/auto.conf', line 574)
+CONFIG_RTC_MC146818_LIB = y
+# makefile (from 'include/config/auto.conf', line 557)
+CONFIG_HAVE_GENERIC_GUP = y
+# makefile (from 'Makefile', line 1714)
+cmd_files := .vmlinux.cmd
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# makefile (from 'include/config/auto.conf', line 440)
+CONFIG_HVC_DRIVER = y
+# makefile (from 'Makefile', line 423)
+CFLAGS_KASAN := 
+# makefile (from 'include/config/auto.conf', line 180)
+CONFIG_DRM_KMS_HELPER = y
+# environment
+SESSION_MANAGER = local/examplehostname:@/tmp/.ICE-unix/1194,unix/examplehostname:/tmp/.ICE-unix/1194
+# makefile (from 'include/config/auto.conf', line 170)
+CONFIG_ENABLE_WARN_DEPRECATED = y
+# makefile (from 'include/config/auto.conf', line 350)
+CONFIG_CROSS_MEMORY_ATTACH = y
+# makefile (from 'scripts/Kbuild.include', line 9)
+space := $(subst ,, )
+# makefile (from 'include/config/auto.conf', line 338)
+CONFIG_EFI_PARTITION = y
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'include/config/auto.conf', line 179)
+CONFIG_SG_POOL = y
+# makefile (from 'include/config/auto.conf', line 657)
+CONFIG_HAVE_ARCH_KGDB = y
+# makefile (from 'Makefile', line 21)
+LC_NUMERIC = C
+# makefile (from 'include/config/auto.conf', line 242)
+CONFIG_ARCH_MMAP_RND_BITS_MAX = 16
+# makefile (from 'Makefile', line 293)
+CONFIG_SHELL := /bin/bash
+# makefile (from 'include/config/auto.conf', line 756)
+CONFIG_GENERIC_CLOCKEVENTS_BROADCAST = y
+# makefile (from 'include/config/auto.conf', line 686)
+CONFIG_NET_VENDOR_ROCKER = y
+# makefile (from 'include/config/auto.conf', line 37)
+CONFIG_FSNOTIFY = y
+# makefile (from 'include/config/auto.conf', line 328)
+CONFIG_CRYPTO_ALGAPI = y
+# makefile (from 'include/config/auto.conf', line 35)
+CONFIG_SSB_POSSIBLE = y
+# makefile (from 'include/config/auto.conf', line 104)
+CONFIG_X86 = y
+# makefile (from 'include/config/auto.conf', line 321)
+CONFIG_THERMAL_GOV_STEP_WISE = y
+# makefile (from 'include/config/auto.conf', line 135)
+CONFIG_DRM_BRIDGE = y
+# makefile (from 'include/config/auto.conf', line 563)
+CONFIG_IPC_NS = y
+# makefile (from 'scripts/Kbuild.include', line 5)
+comma := ,
+# makefile (from 'include/config/auto.conf', line 542)
+CONFIG_HID_CHICONY = y
+# makefile (from 'scripts/Kbuild.include', line 128)
+hostcc-option = $(call __cc-option, $(HOSTCC), $(HOSTCFLAGS) $(HOST_EXTRACFLAGS),$(1),$(2))
+# makefile (from 'include/config/auto.conf', line 548)
+CONFIG_NET_VENDOR_MELLANOX = y
+# makefile (from 'include/config/auto.conf', line 411)
+CONFIG_NET = y
+# makefile (from 'include/config/auto.conf', line 461)
+CONFIG_GENERIC_STRNCPY_FROM_USER = y
+# makefile (from 'include/config/auto.conf', line 119)
+CONFIG_ARCH_HAS_UBSAN_SANITIZE_ALL = y
+# makefile (from 'include/config/auto.conf', line 428)
+CONFIG_PCI_DOMAINS = y
+# makefile (from 'Makefile', line 213)
+VPATH := .:/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile (from 'include/config/auto.conf', line 599)
+CONFIG_HID_GENERIC = y
+# makefile (from 'arch/x86/Makefile', line 219)
+avx512_instr := -DCONFIG_AS_AVX512=1
+# makefile (from 'include/config/auto.conf', line 560)
+CONFIG_VIRTIO_BALLOON = y
+# makefile (from 'Makefile', line 353)
+AR = $(CROSS_COMPILE)ar
+# makefile (from 'include/config/auto.conf', line 457)
+CONFIG_ARCH_WANTS_DYNAMIC_TASK_STRUCT = y
+# makefile (from 'include/config/auto.conf', line 795)
+CONFIG_MESSAGE_LOGLEVEL_DEFAULT = 4
+# makefile (from 'Makefile', line 359)
+GENKSYMS = scripts/genksyms/genksyms
+# makefile (from 'include/config/auto.conf', line 222)
+CONFIG_MODULES_TREE_LOOKUP = y
+# makefile (from 'scripts/Kbuild.include', line 173)
+ar-option = $(call try-run, $(AR) rc$(1) "$$TMP",$(1),$(2))
+# makefile (from 'include/config/auto.conf', line 358)
+CONFIG_HAVE_FUNCTION_TRACER = y
+# makefile (from 'arch/x86/Makefile', line 226)
+LDFLAGS := -m elf_i386
+# makefile (from 'include/config/auto.conf', line 344)
+CONFIG_CRC32_SLICEBY8 = y
+# makefile (from 'include/config/auto.conf', line 356)
+CONFIG_EXT4_USE_FOR_EXT2 = y
+# makefile (from 'Makefile', line 1509)
+module-dirs := _module_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'include/config/auto.conf', line 347)
+CONFIG_HAVE_OPTPROBES = y
+# makefile (from 'include/config/auto.conf', line 246)
+CONFIG_KVM_GUEST = y
+# makefile (from 'include/config/auto.conf', line 580)
+CONFIG_X86_RESERVE_LOW = 64
+# makefile (from 'include/config/auto.conf', line 550)
+CONFIG_X86_MCE_INTEL = y
+# environment
+LS_COLORS = 
+# makefile (from 'include/config/auto.conf', line 248)
+CONFIG_ARCH_MMAP_RND_COMPAT_BITS_MIN = 8
+# makefile (from 'include/config/auto.conf', line 174)
+CONFIG_ARCH_DEFCONFIG = "arch/x86/configs/i386_defconfig"
+# makefile (from 'include/config/auto.conf', line 372)
+CONFIG_MOUSE_PS2_LOGIPS2PP = y
+# makefile (from 'include/config/auto.conf', line 474)
+CONFIG_QUEUED_SPINLOCKS = y
+# makefile (from 'Makefile', line 889)
+mod_strip_cmd = true
+# makefile (from 'include/config/auto.conf', line 8)
+CONFIG_KERNEL_GZIP = y
+# makefile (from 'include/config/auto.conf', line 203)
+CONFIG_NET_VENDOR_SEEQ = y
+# makefile (from 'Makefile', line 3)
+SUBLEVEL = 9
+# makefile (from 'include/config/auto.conf', line 9)
+CONFIG_MICROCODE = y
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 1853
+# makefile (from 'include/config/auto.conf', line 565)
+CONFIG_ARCH_MMAP_RND_BITS_MIN = 8
+# makefile (from 'include/config/auto.conf', line 779)
+CONFIG_RWSEM_SPIN_ON_OWNER = y
+# automatic
+%F = $(notdir $%)
+# makefile (from 'include/config/auto.conf', line 766)
+CONFIG_CPU_SUP_CENTAUR = y
+# makefile (from 'include/config/auto.conf', line 605)
+CONFIG_HID_LOGITECH = y
+# makefile (from 'Makefile', line 1496)
+KBUILD_MODULES := 1
+# makefile (from 'include/config/auto.conf', line 729)
+CONFIG_ELF_CORE = y
+# makefile (from 'include/config/auto.conf', line 107)
+CONFIG_X86_MCE_AMD = y
+# makefile (from 'include/config/auto.conf', line 264)
+CONFIG_HAVE_KVM = y
+# makefile (from 'include/config/auto.conf', line 619)
+CONFIG_ARCH_HAS_STRICT_MODULE_RWX = y
+# makefile (from 'include/config/auto.conf', line 419)
+CONFIG_SND_HDA_GENERIC = y
+# makefile (from 'include/config/auto.conf', line 588)
+CONFIG_LOCK_SPIN_ON_OWNER = y
+# makefile (from 'include/config/auto.conf', line 649)
+CONFIG_HAVE_OPROFILE = y
+# makefile (from 'include/config/auto.conf', line 191)
+CONFIG_IPV6_SIT = y
+# makefile (from 'include/config/auto.conf', line 719)
+CONFIG_SERIO_I8042 = y
+# makefile (from 'include/config/auto.conf', line 292)
+CONFIG_FUTEX = y
+# makefile (from 'include/config/auto.conf', line 267)
+CONFIG_HAVE_PERF_REGS = y
+# environment
+HOME = /home/labredes
+# makefile (from 'include/config/auto.conf', line 193)
+CONFIG_DEFCONFIG_LIST = "/lib/modules/$UNAME_RELEASE/.config"
+# makefile (from 'include/config/auto.conf', line 34)
+CONFIG_PNPACPI = y
+# makefile (from 'include/config/auto.conf', line 434)
+CONFIG_MOUSE_PS2_SYNAPTICS_SMBUS = y
+# makefile (from 'include/config/auto.conf', line 744)
+CONFIG_FB_CFB_COPYAREA = y
+# makefile (from 'arch/x86/Makefile', line 28)
+CODE16GCC_CFLAGS := -m32 -Wa,./arch/x86/boot/code16gcc.h
+# makefile (from 'scripts/Kbuild.include', line 162)
+cc-ldoption = $(call try-run, $(CC) $(1) -nostdlib -x c /dev/null -o "$$TMP",$(1),$(2))
+# makefile (from 'include/config/auto.conf', line 13)
+CONFIG_RFS_ACCEL = y
+# makefile (from 'include/config/auto.conf', line 97)
+CONFIG_ATA = y
+# makefile (from 'include/config/auto.conf', line 391)
+CONFIG_SIGNALFD = y
+# makefile (from 'include/config/auto.conf', line 551)
+CONFIG_ARCH_ENABLE_MEMORY_HOTPLUG = y
+# makefile (from 'include/config/auto.conf', line 137)
+CONFIG_NET_VENDOR_SILAN = y
+# makefile (from 'include/config/auto.conf', line 635)
+CONFIG_USB_DEFAULT_PERSIST = y
+# default
+.LOADED := 
+# makefile (from 'arch/x86/Makefile', line 211)
+cfi-sections := -DCONFIG_AS_CFI_SECTIONS=1
+# makefile (from 'include/config/auto.conf', line 335)
+CONFIG_NET_VENDOR_OKI = y
+# makefile (from 'include/config/auto.conf', line 608)
+CONFIG_OPROFILE_NMI_TIMER = y
+# environment
+XDG_SEAT = seat0
+# makefile (from '.vmlinux.cmd', line 1)
+cmd_vmlinux := /bin/bash scripts/link-vmlinux.sh /home/labredes/LabSisop/linuxdistro/buildroot/output/host/bin/i686-buildroot-linux-uclibc-ld -m elf_i386 --emit-relocs --build-id ;  true
+# makefile (from 'include/config/auto.conf', line 26)
+CONFIG_HDMI = y
+# makefile (from 'include/config/auto.conf', line 298)
+CONFIG_ARCH_HAVE_NMI_SAFE_CMPXCHG = y
+# makefile (from 'include/config/auto.conf', line 262)
+CONFIG_ACPI_PROCESSOR = y
+# makefile (from 'include/config/auto.conf', line 785)
+CONFIG_PNP_DEBUG_MESSAGES = y
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = X-Cinnamon
+# makefile (from 'include/config/auto.conf', line 60)
+CONFIG_HOTPLUG_CPU = y
+# makefile (from 'include/config/auto.conf', line 417)
+CONFIG_HAVE_CLK_PREPARE = y
+# makefile (from 'Makefile', line 363)
+PYTHON = python
+# makefile (from 'include/config/auto.conf', line 695)
+CONFIG_GENERIC_IRQ_MIGRATION = y
+# makefile (from 'include/config/auto.conf', line 395)
+CONFIG_EXT4_FS = y
+# makefile (from 'include/config/auto.conf', line 331)
+CONFIG_KEYBOARD_ATKBD = y
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 1654)
+build-dir = $(KBUILD_EXTMOD)$(if $(zap-slash),/$(zap-slash))
+# makefile (from 'include/config/auto.conf', line 304)
+CONFIG_IPV6_NDISC_NODETYPE = y
+# makefile (from 'scripts/Kbuild.include', line 108)
+as-instr = $(call try-run, printf "%b\n" "$(1)" | $(CC) $(KBUILD_AFLAGS) -c -x assembler -o "$$TMP" -,$(2),$(3))
+# makefile (from 'include/config/auto.conf', line 621)
+CONFIG_SCHED_MC_PRIO = y
+# makefile (from 'include/config/auto.conf', line 348)
+CONFIG_MULTIUSER = y
+# makefile (from 'include/config/auto.conf', line 583)
+CONFIG_INET6_XFRM_MODE_TRANSPORT = y
+# makefile (from 'arch/x86/Makefile', line 218)
+avx2_instr := -DCONFIG_AS_AVX2=1
+# makefile (from 'include/config/auto.conf', line 540)
+CONFIG_SCSI = y
+ 
+# makefile (from 'include/config/auto.conf', line 127)
+CONFIG_DRM_KMS_FB_HELPER = y
+# makefile (from 'scripts/Kbuild.include', line 143)
+cc-name = $(shell $(CC) -v 2>&1 | grep -q "clang version" && echo clang || echo gcc)
+# makefile (from 'include/config/auto.conf', line 53)
+CONFIG_HAVE_KERNEL_BZIP2 = y
+# makefile (from 'include/config/auto.conf', line 486)
+CONFIG_X86_USE_PPRO_CHECKSUM = y
+# makefile (from 'include/config/auto.conf', line 163)
+CONFIG_SBITMAP = y
+# environment
+LOGNAME = labredes
+# makefile (from 'include/config/auto.conf', line 627)
+CONFIG_TCP_CONG_CUBIC = y
+# makefile (from 'include/config/auto.conf', line 197)
+CONFIG_BPF = y
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'include/config/auto.conf', line 199)
+CONFIG_ACPI_HOTPLUG_CPU = y
+# makefile (from 'include/config/auto.conf', line 231)
+CONFIG_RWSEM_XCHGADD_ALGORITHM = y
+# makefile (from 'include/config/auto.conf', line 365)
+CONFIG_PM_SLEEP = y
+# makefile (from 'include/config/auto.conf', line 364)
+CONFIG_SLUB = y
+# makefile (from 'include/config/auto.conf', line 195)
+CONFIG_SERIAL_8250_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 648)
+CONFIG_MSDOS_PARTITION = y
+# makefile (from 'include/config/auto.conf', line 281)
+CONFIG_ACPI_AC = y
+# makefile (from 'include/config/auto.conf', line 650)
+CONFIG_HAVE_GENERIC_DMA_COHERENT = y
+# makefile (from 'include/config/auto.conf', line 142)
+CONFIG_CPU_FREQ_DEFAULT_GOV_PERFORMANCE = y
+# makefile (from 'include/config/auto.conf', line 33)
+CONFIG_HAVE_ARCH_MMAP_RND_BITS = y
+# makefile (from 'arch/x86/Makefile', line 39)
+REALMODE_CFLAGS :=  -m16 -g -Os -D__KERNEL__ -DDISABLE_BRANCH_PROFILING -Wall -Wstrict-prototypes -march=i386 -mregparm=3 -fno-strict-aliasing -fomit-frame-pointer -fno-pic -mno-mmx -mno-sse  -ffreestanding  -fno-stack-protector  -mpreferred-stack-boundary=2
+# makefile (from 'include/config/auto.conf', line 232)
+CONFIG_HAVE_KERNEL_XZ = y
+# makefile (from 'include/config/auto.conf', line 123)
+CONFIG_PCI_BIOS = y
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from 'include/config/auto.conf', line 623)
+CONFIG_HAVE_USER_RETURN_NOTIFIER = y
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from 'include/config/auto.conf', line 211)
+CONFIG_HAVE_DYNAMIC_FTRACE = y
+# makefile (from 'Makefile', line 211)
+obj := .
+# makefile (from 'include/config/auto.conf', line 227)
+CONFIG_INET_TUNNEL = y
+# makefile (from 'arch/x86/Makefile', line 270)
+drivers- = arch/x86/math-emu/ arch/x86/oprofile/
+# makefile (from 'include/config/auto.conf', line 131)
+CONFIG_NET_VENDOR_ADAPTEC = y
+# makefile (from 'include/config/auto.conf', line 465)
+CONFIG_ILLEGAL_POINTER_VALUE = 0
+# makefile (from 'include/config/auto.conf', line 186)
+CONFIG_NETDEVICES = y
+# makefile (from 'include/config/auto.conf', line 496)
+CONFIG_HW_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 405)
+CONFIG_GENERIC_IRQ_PROBE = y
+# makefile (from 'include/config/auto.conf', line 105)
+CONFIG_ARCH_HAS_SG_CHAIN = y
+# makefile (from 'include/config/auto.conf', line 305)
+CONFIG_PCI_LABEL = y
+# makefile (from 'include/config/auto.conf', line 473)
+CONFIG_RELOCATABLE = y
+# makefile (from 'include/config/auto.conf', line 751)
+CONFIG_SYSVIPC_SYSCTL = y
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'include/config/auto.conf', line 647)
+CONFIG_VIRTUALIZATION = y
+# makefile (from 'include/config/auto.conf', line 154)
+CONFIG_CPU_SUP_INTEL = y
+# makefile (from 'include/config/auto.conf', line 256)
+CONFIG_NET_VENDOR_HP = y
+# makefile (from 'include/config/auto.conf', line 322)
+CONFIG_DEFAULT_HOSTNAME = "(none)"
+# makefile (from 'Makefile', line 289)
+KCONFIG_CONFIG = .config
+# makefile (from 'include/config/auto.conf', line 689)
+CONFIG_EDAC_ATOMIC_SCRUB = y
+# makefile (from 'include/config/auto.conf', line 724)
+CONFIG_SECCOMP_FILTER = y
+# makefile (from 'include/config/auto.conf', line 536)
+CONFIG_RCU_NEED_SEGCBLIST = y
+# makefile (from 'include/config/auto.conf', line 244)
+CONFIG_TRACE_IRQFLAGS_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 289)
+CONFIG_HZ_PERIODIC = y
+# makefile (from 'include/config/auto.conf', line 693)
+CONFIG_FLATMEM = y
+# makefile (from 'include/config/auto.conf', line 32)
+CONFIG_INLINE_WRITE_UNLOCK_IRQ = y
+# makefile (from 'include/config/auto.conf', line 713)
+CONFIG_ARM_GIC_MAX_NR = 1
+# makefile (from 'include/config/auto.conf', line 362)
+CONFIG_NET_VENDOR_MYRI = y
+# makefile (from 'include/config/auto.conf', line 683)
+CONFIG_PROC_FS = y
+# makefile (from 'include/config/auto.conf', line 477)
+CONFIG_PANIC_TIMEOUT = 0
+# makefile (from 'include/config/auto.conf', line 111)
+CONFIG_NET_VENDOR_SYNOPSYS = y
+# makefile (from 'include/config/auto.conf', line 397)
+CONFIG_HAVE_HW_BREAKPOINT = y
+# makefile (from 'include/config/auto.conf', line 254)
+CONFIG_LBDAF = y
+# makefile (from 'include/config/auto.conf', line 731)
+CONFIG_VIRTIO_MMIO_CMDLINE_DEVICES = y
+# makefile (from 'include/config/auto.conf', line 132)
+CONFIG_MOUSE_PS2_BYD = y
+# makefile (from 'include/config/auto.conf', line 625)
+CONFIG_HAVE_PERF_USER_STACK_DUMP = y
+# makefile (from 'include/config/auto.conf', line 192)
+CONFIG_XFRM = y
+# makefile (from 'include/config/auto.conf', line 755)
+CONFIG_ARCH_USE_QUEUED_RWLOCKS = y
+# makefile (from 'include/config/auto.conf', line 112)
+CONFIG_HWMON = y
+# makefile (from 'scripts/Kbuild.include', line 6)
+quote := "
+# environment
+XDG_SESSION_ID = 2
+# makefile (from 'include/config/auto.conf', line 792)
+CONFIG_PERF_EVENTS_INTEL_CSTATE = y
+# makefile (from 'include/config/auto.conf', line 90)
+CONFIG_BOUNCE = y
+# makefile (from 'include/config/auto.conf', line 521)
+CONFIG_USB_ARCH_HAS_HCD = y
+# makefile (from 'include/config/auto.conf', line 204)
+CONFIG_SELECT_MEMORY_MODEL = y
+# makefile (from 'arch/x86/Makefile', line 263)
+core-y = arch/x86/
+# makefile
+.DEFAULT_GOAL := _all
+# makefile (from 'include/config/auto.conf', line 332)
+CONFIG_HAVE_MEMBLOCK_NODE_MAP = y
+# makefile (from 'Makefile', line 1531)
+clean-dirs := _clean_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# environment
+XDG_CURRENT_DESKTOP = X-Cinnamon
+# makefile (from 'Makefile', line 376)
+CFLAGS_KCOV := -fsanitize-coverage=trace-pc
+# makefile (from 'include/config/auto.conf', line 64)
+CONFIG_BLK_DEV_BSG = y
+# makefile (from 'Makefile', line 5)
+NAME = Fearless Coyote
+# makefile (from 'include/config/auto.conf', line 12)
+CONFIG_SLUB_CPU_PARTIAL = y
+ 
+# makefile (from 'include/config/auto.conf', line 498)
+CONFIG_MOUSE_PS2_FOCALTECH = y
+# makefile (from 'Makefile', line 73)
+KBUILD_VERBOSE = 0
+# makefile (from 'Makefile', line 439)
+RCS_TAR_IGNORE := --exclude SCCS --exclude BitKeeper --exclude .svn --exclude CVS --exclude .pc --exclude .hg --exclude .git
+# makefile (from 'include/config/auto.conf', line 572)
+CONFIG_INLINE_READ_UNLOCK_IRQ = y
+# makefile (from 'include/config/auto.conf', line 300)
+CONFIG_NET_VENDOR_EMULEX = y
+# makefile (from 'include/config/auto.conf', line 595)
+CONFIG_X86_IO_APIC = y
+# makefile (from 'Makefile', line 380)
+USERINCLUDE := -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h
+# makefile (from 'include/config/auto.conf', line 527)
+CONFIG_NET_VENDOR_MICREL = y
+# makefile (from 'include/config/auto.conf', line 329)
+CONFIG_NET_VENDOR_WIZNET = y
+# makefile (from 'include/config/auto.conf', line 674)
+CONFIG_HW_RANDOM_VIA = m
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'include/config/auto.conf', line 402)
+CONFIG_NET_VENDOR_TI = y
+# makefile (from 'include/config/auto.conf', line 589)
+CONFIG_SLAB_MERGE_DEFAULT = y
+# makefile (from 'include/config/auto.conf', line 84)
+CONFIG_VGA_ARB = y
+# makefile (from 'include/config/auto.conf', line 760)
+CONFIG_MOUSE_PS2_SYNAPTICS = y
+# makefile (from 'include/config/auto.conf', line 667)
+CONFIG_DEFAULT_SECURITY = ""
+# makefile (from 'include/config/auto.conf', line 624)
+CONFIG_DEFAULT_IOSCHED = "cfq"
+# makefile (from 'include/config/auto.conf', line 200)
+CONFIG_INSTRUCTION_DECODER = y
+# makefile (from 'include/config/auto.conf', line 151)
+CONFIG_HID_APPLE = y
+# makefile (from 'include/config/auto.conf', line 738)
+CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE = y
+# makefile (from 'include/config/auto.conf', line 255)
+CONFIG_GRO_CELLS = y
+# makefile (from 'include/config/auto.conf', line 126)
+CONFIG_USB_UHCI_HCD = y
+# makefile (from 'include/config/auto.conf', line 291)
+CONFIG_ANON_INODES = y
+# makefile (from 'include/config/auto.conf', line 128)
+CONFIG_ARCH_MIGHT_HAVE_ACPI_PDC = y
+# makefile (from 'Makefile', line 1713)
+targets := 
+# default
+MAKE_COMMAND := make
+# makefile (from 'include/config/auto.conf', line 76)
+CONFIG_SCHED_OMIT_FRAME_POINTER = y
+# makefile (from 'Makefile', line 916)
+INITRD_COMPRESS- := lz4
+# makefile (from 'include/config/auto.conf', line 781)
+CONFIG_DEVPORT = y
+# makefile (from 'include/config/auto.conf', line 537)
+CONFIG_INLINE_READ_UNLOCK = y
+# makefile (from 'Makefile', line 791)
+NOSTDINC_FLAGS =  -nostdinc -isystem $(shell $(CC) -print-file-name=include)
+# makefile (from 'include/config/auto.conf', line 341)
+CONFIG_NET_VENDOR_8390 = y
+# makefile (from 'include/config/auto.conf', line 413)
+CONFIG_SND_JACK = y
+# makefile (from 'Makefile', line 490)
+config-targets := 0
+# makefile (from 'include/config/auto.conf', line 207)
+CONFIG_GENERIC_STRNLEN_USER = y
+# makefile (from 'include/config/auto.conf', line 515)
+CONFIG_PERF_EVENTS_INTEL_UNCORE = y
+# makefile (from 'include/config/auto.conf', line 49)
+CONFIG_ARCH_HAS_DEVMEM_IS_ALLOWED = y
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = pt_BR:pt:en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# makefile (from 'scripts/Kbuild.include', line 19)
+depfile = $(subst $(comma),_,$(dot-target).d)
+# makefile (from 'include/config/auto.conf', line 794)
+CONFIG_DCACHE_WORD_ACCESS = y
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-8d10aa9d-1.65.2-main.sock
+# makefile (from 'include/config/auto.conf', line 806)
+CONFIG_HAVE_EFFICIENT_UNALIGNED_ACCESS = y
+# makefile (from 'Makefile', line 1574)
+cmd_tags = $(CONFIG_SHELL) $(srctree)/scripts/tags.sh $@
+# makefile (from 'include/config/auto.conf', line 532)
+CONFIG_UID16 = y
+# makefile (from 'include/config/auto.conf', line 334)
+CONFIG_NET_IP_TUNNEL = y
+# makefile (from 'include/config/auto.conf', line 159)
+CONFIG_GENERIC_ISA_DMA = y
+# makefile (from 'include/config/auto.conf', line 190)
+CONFIG_FS_POSIX_ACL = y
+# makefile (from 'include/config/auto.conf', line 485)
+CONFIG_HAVE_KERNEL_GZIP = y
+# makefile (from 'include/config/auto.conf', line 252)
+CONFIG_TREE_RCU = y
+# makefile (from 'include/config/auto.conf', line 24)
+CONFIG_FIX_EARLYCON_MEM = y
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PT8HOME = /opt/pt
+# makefile (from 'include/config/auto.conf', line 524)
+CONFIG_PANIC_ON_OOPS_VALUE = 0
+# makefile (from 'include/config/auto.conf', line 286)
+CONFIG_X86_32 = y
+# makefile (from 'arch/x86/Makefile', line 210)
+cfi-sigframe := -DCONFIG_AS_CFI_SIGNAL_FRAME=1
+# makefile (from 'include/config/auto.conf', line 808)
+CONFIG_PROC_SYSCTL = y
+# makefile (from 'include/config/auto.conf', line 610)
+CONFIG_CRYPTO_DRBG = m
+# makefile (from 'include/config/auto.conf', line 545)
+CONFIG_RANDOMIZE_BASE = y
+# makefile (from 'include/config/auto.conf', line 658)
+ 
+CONFIG_ARCH_USE_QUEUED_SPINLOCKS = y
+# makefile (from 'include/config/auto.conf', line 6)
+CONFIG_SND_PROC_FS = y
+# makefile (from 'include/config/auto.conf', line 450)
+CONFIG_ATA_VERBOSE_ERROR = y
+# makefile (from 'scripts/Kbuild.include', line 123)
+cc-option = $(call __cc-option, $(CC), $(KBUILD_CPPFLAGS) $(CC_OPTION_CFLAGS),$(1),$(2))
+# makefile (from 'include/config/auto.conf', line 444)
+CONFIG_HAVE_NMI = y
+# makefile (from 'Makefile', line 250)
+ARCH = $(SUBARCH)
+# makefile (from 'include/config/auto.conf', line 156)
+CONFIG_STRICT_KERNEL_RWX = y
+# makefile (from 'include/config/auto.conf', line 456)
+CONFIG_ARCH_WANT_HUGE_PMD_SHARE = y
+# makefile (from 'include/config/auto.conf', line 116)
+CONFIG_ARCH_USE_BUILTIN_BSWAP = y
+# makefile (from 'include/config/auto.conf', line 764)
+CONFIG_FB_NOTIFY = y
+# makefile (from 'include/config/auto.conf', line 768)
+CONFIG_FHANDLE = y
+# automatic
++F = $(notdir $+)
+# makefile (from 'include/config/auto.conf', line 796)
+CONFIG_AMD_NB = y
+# makefile (from 'include/config/auto.conf', line 120)
+CONFIG_SERIAL_8250_LPSS = y
+# makefile (from 'include/config/auto.conf', line 575)
+CONFIG_DST_CACHE = y
+# environment
+CINNAMON_VERSION = 3.8.8
+# makefile (from 'include/config/auto.conf', line 355)
+CONFIG_TMPFS_XATTR = y
+# makefile (from 'include/config/auto.conf', line 522)
+CONFIG_GENERIC_IRQ_SHOW = y
+# makefile (from 'Makefile', line 223)
+SUBARCH := x86
+# makefile (from 'include/config/auto.conf', line 99)
+CONFIG_EXPORTFS = y
+# makefile (from 'include/config/auto.conf', line 145)
+CONFIG_RATIONAL = y
+# makefile (from 'Makefile', line 355)
+STRIP = $(CROSS_COMPILE)strip
+# makefile (from 'Makefile', line 370)
+AFLAGS_MODULE = 
+# makefile (from 'include/config/auto.conf', line 767)
+CONFIG_SYSCTL_EXCEPTION_TRACE = y
+# makefile (from 'Makefile', line 375)
+CFLAGS_GCOV := -fprofile-arcs -ftest-coverage -fno-tree-loop-im -Wno-maybe-uninitialized
+# makefile (from 'include/config/auto.conf', line 279)
+CONFIG_X86_VERBOSE_BOOTUP = y
+# makefile (from 'include/config/auto.conf', line 594)
+CONFIG_HZ_250 = y
+# makefile (from 'include/config/auto.conf', line 234)
+CONFIG_CONSOLE_TRANSLATIONS = y
+# makefile (from 'include/config/auto.conf', line 70)
+CONFIG_IOMMU_SUPPORT = y
+# makefile (from 'Makefile', line 251)
+CROSS_COMPILE = $(CONFIG_CROSS_COMPILE:"%"=%)
+# makefile (from 'include/config/auto.conf', line 67)
+CONFIG_CRYPTO_RNG2 = y
+# makefile (from 'include/config/auto.conf', line 500)
+CONFIG_HID_EZKEY = y
+# makefile (from 'scripts/Kbuild.include', line 154)
+cc-ifversion = $(shell [ $(cc-version) $(1) $(2) ] && echo $(3) || echo $(4))
+# makefile (from 'include/config/auto.conf', line 489)
+CONFIG_GENERIC_ALLOCATOR = y
+# makefile (from 'scripts/Kbuild.include', line 31)
+escsq = $(subst $(squote),'\$(squote)',$1)
+# makefile (from 'include/config/auto.conf', line 66)
+CONFIG_CRYPTO_DRBG_MENU = m
+# makefile (from 'include/config/auto.conf', line 778)
+CONFIG_HAVE_ACPI_APEI_NMI = y
+# makefile (from 'include/config/auto.conf', line 381)
+CONFIG_BASE_FULL = y
+# default
+MAKEFILES := 
+# makefile (from 'include/config/auto.conf', line 271)
+CONFIG_ACPI_PROCESSOR_CSTATE = y
+# makefile (from 'include/config/auto.conf', line 725)
+CONFIG_ARCH_MAY_HAVE_PC_FDC = y
+# makefile (from 'include/config/auto.conf', line 758)
+CONFIG_SERIAL_8250_PCI = y
+# makefile (from 'Makefile', line 255)
+SRCARCH := x86
+# makefile (from 'Makefile', line 897)
+mod_compress_cmd = true
+# makefile (from 'include/config/auto.conf', line 74)
+CONFIG_CRYPTO_HMAC = m
+# makefile (from 'include/config/auto.conf', line 148)
+CONFIG_IO_DELAY_TYPE_0XED = 1
+# makefile (from 'Makefile', line 369)
+CFLAGS_MODULE = 
+# makefile (from 'include/config/auto.conf', line 752)
+CONFIG_DMA_SHARED_BUFFER = y
+# makefile (from 'Makefile', line 1695)
+quiet_cmd_rmdirs = $(if $(wildcard $(rm-dirs)),CLEAN   $(wildcard $(rm-dirs)))
+# makefile (from 'include/config/auto.conf', line 58)
+CONFIG_ARCH_MMAP_RND_COMPAT_BITS_MAX = 16
+# makefile (from 'include/config/auto.conf', line 531)
+CONFIG_BUILDTIME_EXTABLE_SORT = y
+# makefile (from 'include/config/auto.conf', line 189)
+CONFIG_EVENTFD = y
+# makefile (from 'include/config/auto.conf', line 228)
+CONFIG_X86_INTERNODE_CACHE_SHIFT = 5
+# makefile (from 'include/config/auto.conf', line 582)
+CONFIG_NET_VENDOR_AMAZON = y
+# makefile (from 'include/config/auto.conf', line 612)
+CONFIG_X86_CMPXCHG64 = y
+# makefile (from 'include/config/auto.conf', line 615)
+CONFIG_HZ = 250
+# makefile (from 'include/config/auto.conf', line 732)
+CONFIG_MODIFY_LDT_SYSCALL = y
+# makefile (from 'arch/x86/Makefile', line 29)
+ 
+M16_CFLAGS :=  -m16
+# makefile (from 'include/config/auto.conf', line 638)
+CONFIG_CRYPTO_DEV_VIRTIO = m
+# makefile (from 'include/config/auto.conf', line 319)
+CONFIG_HAVE_CLK = y
+# makefile (from 'include/config/auto.conf', line 763)
+CONFIG_REGMAP = y
+# makefile (from 'include/config/auto.conf', line 747)
+CONFIG_ACPI_REV_OVERRIDE_POSSIBLE = y
+# makefile (from 'include/config/auto.conf', line 202)
+CONFIG_CRYPTO_NULL = m
+# makefile (from 'include/config/auto.conf', line 129)
+CONFIG_CRYPTO_KPP2 = y
+# makefile (from 'include/config/auto.conf', line 586)
+CONFIG_EDAC_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 611)
+CONFIG_HAS_IOPORT_MAP = y
+# makefile (from 'include/config/auto.conf', line 793)
+CONFIG_KALLSYMS_BASE_RELATIVE = y
+# makefile (from 'include/config/auto.conf', line 598)
+CONFIG_NET_VENDOR_AGERE = y
+# makefile (from 'arch/x86/Makefile', line 290)
+KBUILD_IMAGE := arch/x86/boot/bzImage
+# makefile (from 'include/config/auto.conf', line 468)
+CONFIG_MOUSE_PS2_LIFEBOOK = y
+# makefile (from 'arch/x86/Makefile', line 220)
+sha1_ni_instr := -DCONFIG_AS_SHA1_NI=1
+# makefile (from 'include/config/auto.conf', line 516)
+CONFIG_NET_VENDOR_QLOGIC = y
+# makefile (from 'include/config/auto.conf', line 295)
+CONFIG_M686 = y
+# makefile (from 'include/config/auto.conf', line 349)
+CONFIG_SUSPEND = y
+# makefile (from 'include/config/auto.conf', line 640)
+CONFIG_FB_SYS_FOPS = y
+# makefile (from 'include/config/auto.conf', line 143)
+CONFIG_SCHED_MC = y
+# makefile (from 'include/config/auto.conf', line 606)
+CONFIG_HAVE_GCC_PLUGINS = y
+# makefile (from 'include/config/auto.conf', line 665)
+CONFIG_GENERIC_CMOS_UPDATE = y
+# makefile (from 'Makefile', line 1655)
+target-dir = $(if $(KBUILD_EXTMOD),$(dir $<),$(dir $@))
+# makefile (from 'Makefile', line 414)
+KERNELVERSION = $(VERSION)$(if $(PATCHLEVEL),.$(PATCHLEVEL)$(if $(SUBLEVEL),.$(SUBLEVEL)))$(EXTRAVERSION)
+# makefile (from 'include/config/auto.conf', line 727)
+CONFIG_INET_DIAG = y
+# makefile (from 'include/config/auto.conf', line 443)
+CONFIG_CLONE_BACKWARDS = y
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'include/config/auto.conf', line 462)
+CONFIG_NET_VENDOR_DEC = y
+# makefile (from 'include/config/auto.conf', line 323)
+CONFIG_SRCU = y
+# makefile (from 'arch/x86/Makefile', line 62)
+BITS := 32
+# makefile (from 'include/config/auto.conf', line 273)
+CONFIG_CRYPTO_ECHAINIV = m
+# makefile (from 'include/config/auto.conf', line 308)
+CONFIG_SYSVIPC = y
+# makefile (from 'include/config/auto.conf', line 269)
+CONFIG_NET_VENDOR_ALTEON = y
+# makefile (from 'include/config/auto.conf', line 407)
+CONFIG_PCI_MMCONFIG = y
+# makefile (from 'Makefile', line 356)
+OBJCOPY = $(CROSS_COMPILE)objcopy
+# makefile (from 'include/config/auto.conf', line 68)
+CONFIG_THERMAL_WRITABLE_TRIPS = y
+# makefile (from 'include/config/auto.conf', line 152)
+CONFIG_INIT_ENV_ARG_LIMIT = 32
+# default
+SUFFIXES := 
+# makefile (from 'scripts/Kbuild.include', line 264)
+if_changed = $(if $(strip $(any-prereq) $(arg-check)), @set -e; $(echo-cmd) $(cmd_$(1)); printf '%s\n' 'cmd_$@ := $(make-cmd)' > $(dot-target).cmd, @:)
+# makefile (from 'include/config/auto.conf', line 643)
+CONFIG_ACPI_BATTERY = y
+# makefile (from 'include/config/auto.conf', line 546)
+CONFIG_CLKDEV_LOOKUP = y
+# makefile (from 'include/config/auto.conf', line 40)
+CONFIG_HAVE_KERNEL_LZMA = y
+# makefile (from 'scripts/Kbuild.include', line 27)
+baseprereq = $(basename $(notdir $<))
+# makefile (from 'include/config/auto.conf', line 464)
+CONFIG_ACPI_BUTTON = y
+# makefile (from 'include/config/auto.conf', line 746)
+CONFIG_MANDATORY_FILE_LOCKING = y
+# makefile (from 'include/config/auto.conf', line 790)
+CONFIG_PERF_EVENTS = y
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# makefile (from 'include/config/auto.conf', line 214)
+CONFIG_NET_VENDOR_RDC = y
+# makefile (from 'include/config/auto.conf', line 593)
+CONFIG_HW_RANDOM_INTEL = m
+# makefile (from 'include/config/auto.conf', line 791)
+CONFIG_GENERIC_TIME_VSYSCALL = y
+# makefile (from 'Makefile', line 408)
+KBUILD_AFLAGS_MODULE := -DMODULE
+# makefile (from 'include/config/auto.conf', line 343)
+CONFIG_PID_NS = y
+# makefile (from 'Makefile', line 25)
+GREP_OPTIONS := 
+# makefile (from 'include/config/auto.conf', line 235)
+CONFIG_ARCH_SUPPORTS_ATOMIC_RMW = y
+# makefile (from 'include/config/auto.conf', line 706)
+CONFIG_ATA_SFF = y
+ 
+# makefile (from 'include/config/auto.conf', line 570)
+CONFIG_ARCH_SUPPORTS_UPROBES = y
+# makefile (from 'include/config/auto.conf', line 230)
+CONFIG_IOSCHED_CFQ = y
+# makefile (from 'include/config/auto.conf', line 245)
+CONFIG_MTRR_SANITIZER_ENABLE_DEFAULT = 0
+# makefile (from 'include/config/auto.conf', line 130)
+CONFIG_MTRR = y
+# makefile (from 'include/config/auto.conf', line 288)
+CONFIG_GENERIC_CALIBRATE_DELAY = y
+# makefile (from 'Makefile', line 186)
+KBUILD_EXTMOD := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile (from 'include/config/auto.conf', line 173)
+CONFIG_USB_COMMON = y
+# makefile (from 'include/config/auto.conf', line 777)
+CONFIG_MODULE_UNLOAD = y
+# makefile (from 'include/config/auto.conf', line 478)
+CONFIG_ARCH_MIGHT_HAVE_PC_PARPORT = y
+# makefile (from 'Makefile', line 351)
+CC = $(CROSS_COMPILE)gcc
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from 'include/config/auto.conf', line 512)
+CONFIG_CPU_SUP_TRANSMETA_32 = y
+# makefile (from 'include/config/auto.conf', line 490)
+CONFIG_GENERIC_IO = y
+# makefile (from 'include/config/auto.conf', line 196)
+CONFIG_PROC_PAGE_MONITOR = y
+# makefile (from 'include/config/auto.conf', line 212)
+CONFIG_IO_DELAY_0X80 = y
+# makefile (from 'include/config/auto.conf', line 469)
+CONFIG_SERIO_LIBPS2 = y
+# makefile (from 'include/config/auto.conf', line 544)
+CONFIG_HW_RANDOM_AMD = m
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'include/config/auto.conf', line 369)
+CONFIG_GENERIC_PENDING_IRQ = y
+# makefile (from 'include/config/auto.conf', line 555)
+CONFIG_NET_VENDOR_MARVELL = y
+# makefile (from 'include/config/auto.conf', line 535)
+CONFIG_HAVE_KRETPROBES = y
+# makefile (from 'include/config/auto.conf', line 679)
+CONFIG_ARCH_HAS_ACPI_TABLE_UPGRADE = y
+# makefile (from 'include/config/auto.conf', line 442)
+CONFIG_SERIO_SERPORT = y
+# makefile (from 'Makefile', line 362)
+PERL = perl
+# makefile (from 'include/config/auto.conf', line 345)
+CONFIG_CPU_RMAP = y
+# makefile (from 'include/config/auto.conf', line 91)
+CONFIG_SHMEM = y
+# makefile (from 'include/config/auto.conf', line 185)
+CONFIG_USB_EHCI_HCD = y
+# makefile (from 'include/config/auto.conf', line 162)
+CONFIG_SPLIT_PTLOCK_CPUS = 4
+# makefile (from 'include/config/auto.conf', line 449)
+CONFIG_HAVE_DYNAMIC_FTRACE_WITH_REGS = y
+# makefile (from 'arch/x86/Makefile_32.cpu', line 5)
+HAS_MTUNE := y
+# makefile (from 'include/config/auto.conf', line 249)
+CONFIG_SND_USB = y
+# makefile (from 'include/config/auto.conf', line 340)
+CONFIG_EXTRA_FIRMWARE = ""
+# makefile (from 'include/config/auto.conf', line 696)
+CONFIG_NET_VENDOR_NETRONOME = y
+# makefile (from 'include/config/auto.conf', line 678)
+CONFIG_ACPI_THERMAL = y
+# makefile (from 'include/config/auto.conf', line 48)
+CONFIG_HAVE_IRQ_TIME_ACCOUNTING = y
+# makefile (from 'include/config/auto.conf', line 71)
+CONFIG_HID_BELKIN = y
+# makefile (from 'include/config/auto.conf', line 603)
+CONFIG_VIRTIO_INPUT = y
+# makefile (from 'scripts/Kbuild.include', line 38)
+kecho := echo
+# makefile (from 'include/config/auto.conf', line 636)
+CONFIG_DRM_PANEL_BRIDGE = y
+# makefile (from 'include/config/auto.conf', line 439)
+CONFIG_SCSI_VIRTIO = y
+# makefile (from 'Makefile', line 1521)
+install-dir := extra
+# makefile (from 'include/config/auto.conf', line 20)
+CONFIG_MTRR_SANITIZER_SPARE_REG_NR_DEFAULT = 1
+# makefile (from 'include/config/auto.conf', line 50)
+CONFIG_IPV6 = y
+# makefile (from 'scripts/Kbuild.include', line 76)
+cc-cross-prefix = $(word 1, $(foreach c,$(1), $(shell set -e; if (which $(strip $(c))$(CC)) > /dev/null 2>&1 ; then echo $(c); fi)))
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'include/config/auto.conf', line 327)
+CONFIG_ADVISE_SYSCALLS = y
+# makefile (from 'Makefile', line 838)
+LDFLAGS_vmlinux := --emit-relocs --build-id
+# makefile (from 'include/config/auto.conf', line 17)
+CONFIG_X86_MCE = y
+# makefile (from 'include/config/auto.conf', line 750)
+CONFIG_SND_PCM_TIMER = y
+# makefile (from 'include/config/auto.conf', line 433)
+CONFIG_HAVE_KPROBES = y
+# default
+.SHELLFLAGS := -c
+# makefile (from 'arch/x86/Makefile', line 156)
+CONFIG_X86_X32_ABI := 
+ 
+# makefile (from 'include/config/auto.conf', line 690)
+CONFIG_HW_RANDOM_GEODE = m
+# makefile (from 'include/config/auto.conf', line 72)
+CONFIG_USB = y
+# makefile (from 'include/config/auto.conf', line 671)
+CONFIG_IO_DELAY_TYPE_0X80 = 0
+# makefile (from 'include/config/auto.conf', line 459)
+CONFIG_X86_ESPFIX32 = y
+# makefile (from 'include/config/auto.conf', line 692)
+CONFIG_SND = y
+# makefile (from 'scripts/Kbuild.include', line 389)
+define config_filename
+ifneq ($$(CONFIG_$(1)),"")
+$(1)_FILENAME := $$(subst \\,\,$$(subst \$$(quote),$$(quote),$$(subst $$(space_escape),\$$(space),$$(patsubst "%",%,$$(subst $$(space),$$(space_escape),$$(CONFIG_$(1)))))))
+ifneq ($$(patsubst /%,%,$$(firstword $$($(1)_FILENAME))),$$(firstword $$($(1)_FILENAME)))
+else
+ifeq ($$(wildcard $$($(1)_FILENAME)),)
+ifneq ($$(wildcard $$(srctree)/$$($(1)_FILENAME)),)
+$(1)_SRCPREFIX := $(srctree)/
+endif
+endif
+endif
+endif
+endef
+# makefile (from 'include/config/auto.conf', line 251)
+CONFIG_HAVE_REGS_AND_STACK_ACCESS_API = y
+# makefile (from 'include/config/auto.conf', line 330)
+CONFIG_SERIAL_8250_MID = y
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'include/config/auto.conf', line 717)
+CONFIG_USB_EHCI_TT_NEWSCHED = y
+# makefile (from 'include/config/auto.conf', line 618)
+CONFIG_SERIAL_8250_NR_UARTS = 4
+# makefile (from 'include/config/auto.conf', line 5)
+CONFIG_HAVE_ARCH_SECCOMP_FILTER = y
+# makefile (from 'include/config/auto.conf', line 54)
+CONFIG_DEFAULT_TCP_CONG = "cubic"
+# makefile (from 'include/config/auto.conf', line 247)
+CONFIG_CRYPTO_RNG = m
+# makefile (from 'Makefile', line 297)
+HOST_LFS_CFLAGS := 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'include/config/auto.conf', line 140)
+CONFIG_GENERIC_CPU_AUTOPROBE = y
+# makefile (from 'include/config/auto.conf', line 672)
+CONFIG_EARLY_PRINTK = y
+# makefile (from 'include/config/auto.conf', line 213)
+CONFIG_DMI = y
+# makefile (from 'include/config/auto.conf', line 654)
+CONFIG_USB_XHCI_PCI = y
+# makefile (from 'include/config/auto.conf', line 141)
+CONFIG_STANDALONE = y
+# makefile (from 'include/config/auto.conf', line 243)
+CONFIG_HAVE_ARCH_TRANSPARENT_HUGEPAGE = y
+# makefile (from 'include/config/auto.conf', line 622)
+CONFIG_CRYPTO_ENGINE = m
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/labredes/.Xauthority
+# environment
+GDMSESSION = lightdm-xsession
+# makefile (from 'include/config/auto.conf', line 284)
+CONFIG_THERMAL_HWMON = y
+# makefile (from 'Makefile', line 423)
+CFLAGS_UBSAN := 
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'include/config/auto.conf', line 139)
+CONFIG_NET_VENDOR_BROADCOM = y
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 358)
+AWK = awk
+# makefile (from 'include/config/auto.conf', line 523)
+CONFIG_ARCH_HAS_ELF_RANDOMIZE = y
+# makefile (from 'scripts/Kbuild.include', line 177)
+ld-version = $(shell $(LD) --version | $(srctree)/scripts/ld-version.sh)
+# makefile (from 'scripts/Kbuild.include', line 36)
+quiet_kecho := echo
+# makefile (from 'include/config/auto.conf', line 303)
+CONFIG_SLUB_DEBUG = y
+# makefile (from 'include/config/auto.conf', line 373)
+CONFIG_TICK_CPU_ACCOUNTING = y
+# makefile (from 'Makefile', line 1723)
+PHONY := _all all scripts_basic outputmakefile asm-generic uapi-asm-generic include/config/auto.conf bzImage bzlilo bzdisk fdimage fdimage144 fdimage288 isoimage install vdso_install gcc-plugins-check gcc-plugins crmodverdir ./Module.symvers _module_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello modules modules_install _emodinst_ _emodinst_post _clean_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello clean help prepare scripts includecheck versioncheck coccicheck namespacecheck export_report checkstack kernelrelease kernelversion image_name FORCE
+# makefile (from 'include/config/auto.conf', line 168)
+CONFIG_ACPI_I2C_OPREGION = y
+# makefile (from 'include/config/auto.conf', line 22)
+CONFIG_UEVENT_HELPER = y
+# makefile (from 'Makefile', line 835)
+LDFLAGS_BUILD_ID := --build-id
+# makefile (from 'include/config/auto.conf', line 436)
+CONFIG_HAVE_ARCH_WITHIN_STACK_FRAMES = y
+# makefile (from 'include/config/auto.conf', line 538)
+CONFIG_HAS_DMA = y
+# makefile (from 'include/config/auto.conf', line 44)
+CONFIG_HAVE_COPY_THREAD_TLS = y
+# makefile (from 'Makefile', line 354)
+NM = $(CROSS_COMPILE)nm
+# makefile (from 'include/config/auto.conf', line 423)
+CONFIG_VIRTIO_NET = y
+# makefile (from 'include/config/auto.conf', line 438)
+CONFIG_NET_VENDOR_AQUANTIA = y
+# makefile (from 'include/config/auto.conf', line 30)
+CONFIG_X86_TSC = y
+# makefile (from 'include/config/auto.conf', line 651)
+CONFIG_CPU_IDLE_GOV_LADDER = y
+ 
+# makefile (from 'include/config/auto.conf', line 187)
+CONFIG_IOSCHED_DEADLINE = y
+# makefile (from 'include/config/auto.conf', line 458)
+CONFIG_PMC_ATOM = y
+# makefile (from 'include/config/auto.conf', line 502)
+CONFIG_THERMAL_GOV_USER_SPACE = y
+# makefile (from 'scripts/Kbuild.include', line 84)
+TMPOUT := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello/
+# environment
+VSCODE_PID = 1853
+# makefile (from 'include/config/auto.conf', line 590)
+CONFIG_KERNFS = y
+# makefile (from 'include/config/auto.conf', line 25)
+CONFIG_INOTIFY_USER = y
+# makefile (from 'include/config/auto.conf', line 632)
+CONFIG_MOUSE_PS2_TRACKPOINT = y
+# environment
+GTK_OVERLAY_SCROLLING = 0
+# makefile (from 'include/config/auto.conf', line 194)
+CONFIG_HAVE_KPROBES_ON_FTRACE = y
+# makefile (from 'include/config/auto.conf', line 376)
+CONFIG_ACPI_SYSTEM_POWER_STATES_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 218)
+CONFIG_RCU_STALL_COMMON = y
+# makefile (from 'include/config/auto.conf', line 714)
+CONFIG_FB_DEFERRED_IO = y
+# makefile (from 'include/config/auto.conf', line 233)
+CONFIG_X86_PKG_TEMP_THERMAL = m
+# makefile (from 'include/config/auto.conf', line 109)
+CONFIG_DRM_BOCHS = y
+# makefile (from 'include/config/auto.conf', line 134)
+CONFIG_CRYPTO_DRBG_HMAC = y
+# makefile (from 'Makefile', line 792)
+CHECKFLAGS := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ -Wbitwise -Wno-return-void  -D__i386__  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/8/include
+# makefile (from 'include/config/auto.conf', line 41)
+CONFIG_ARCH_WANT_IPC_PARSE_VERSION = y
+# makefile (from 'include/config/auto.conf', line 122)
+CONFIG_STACKTRACE_SUPPORT = y
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from 'include/config/auto.conf', line 754)
+CONFIG_CROSS_COMPILE = ""
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"5cd49c849ab40d8b4b4b1774f41ea8de.pt-br","_translationsConfigFile":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/tcf.json","_cacheRoot":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br","_resolvedLanguagePackCoreLocation":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1","_corruptedFile":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/corrupted.info","_languagePackSupport":true}
+# makefile (from 'include/config/auto.conf', line 499)
+CONFIG_HID_MONTEREY = y
+# makefile (from 'include/config/auto.conf', line 299)
+CONFIG_SERIAL_CORE_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 559)
+CONFIG_IRQ_DOMAIN = y
+# makefile (from 'include/config/auto.conf', line 803)
+CONFIG_CRYPTO_ALGAPI2 = y
+# makefile (from 'arch/x86/Makefile', line 63)
+UTS_MACHINE := i386
+# makefile (from 'Makefile', line 301)
+HOSTCC = gcc
+# makefile (from 'arch/x86/Makefile_32.cpu', line 7)
+tune = $(call cc-option,-mtune=$(1),$(2))
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share/:/usr/share/
+# makefile (from 'include/config/auto.conf', line 529)
+CONFIG_CRYPTO_CRC32C = y
+# makefile (from 'scripts/Kbuild.include', line 158)
+cc-if-fullversion = $(shell [ $(cc-fullversion) $(1) $(2) ] && echo $(3) || echo $(4))
+# makefile (from 'include/config/auto.conf', line 283)
+CONFIG_VT_HW_CONSOLE_BINDING = y
+# makefile (from 'include/config/auto.conf', line 158)
+CONFIG_PM = y
+# makefile (from 'Makefile', line 1702)
+quiet_cmd_depmod = DEPMOD  $(KERNELRELEASE)
+# makefile (from 'include/config/auto.conf', line 110)
+CONFIG_ARCH_CLOCKSOURCE_DATA = y
+# makefile (from 'Makefile', line 1)
+VERSION = 4
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'include/config/auto.conf', line 278)
+CONFIG_CRYPTO_HW = y
+# makefile (from 'Makefile', line 299)
+HOST_LFS_LIBS := 
+# makefile (from 'include/config/auto.conf', line 493)
+CONFIG_HAVE_FTRACE_MCOUNT_RECORD = y
+# makefile (from 'include/config/auto.conf', line 703)
+CONFIG_DRM_FBDEV_OVERALLOC = 100
+# makefile (from 'include/config/auto.conf', line 219)
+CONFIG_CPU_SUP_AMD = y
+# makefile (from 'include/config/auto.conf', line 776)
+CONFIG_ACPI_LEGACY_TABLES_LOOKUP = y
+# makefile (from 'include/config/auto.conf', line 225)
+CONFIG_THIN_ARCHIVES = y
+# makefile (from 'Makefile', line 492)
+dot-config := 1
+# makefile (from 'include/config/auto.conf', line 614)
+CONFIG_ISA_DMA_API = y
+# makefile (from 'Makefile', line 1696)
+cmd_rmdirs = rm -rf $(rm-dirs)
+# makefile (from 'include/config/auto.conf', line 720)
+CONFIG_TRACING_SUPPORT = y
+# makefile (from 'Makefile', line 20)
+LC_COLLATE = C
+# makefile (from 'include/config/auto.conf', line 656)
+CONFIG_NET_VENDOR_3COM = y
+# makefile (from 'Makefile', line 360)
+ 
+INSTALLKERNEL := installkernel
+# makefile (from 'include/config/auto.conf', line 309)
+CONFIG_HAVE_DEBUG_KMEMLEAK = y
+# makefile (from 'Makefile', line 831)
+KBUILD_AFLAGS := -D__ASSEMBLY__ -fno-PIE -m32 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1  -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1  -DCC_HAVE_ASM_GOTO    
+# makefile (from 'include/config/auto.conf', line 716)
+CONFIG_SND_TIMER = y
+# makefile (from 'include/config/auto.conf', line 169)
+CONFIG_IRQ_WORK = y
+# makefile (from 'include/config/auto.conf', line 800)
+CONFIG_UTS_NS = y
+# makefile (from 'Makefile', line 911)
+INITRD_COMPRESS-y := gzip
+# makefile (from 'include/config/auto.conf', line 470)
+CONFIG_PAGE_OFFSET = 0xC0000000
+# makefile (from 'include/config/auto.conf', line 552)
+CONFIG_PCI_LOCKLESS_CONFIG = y
+# makefile (from 'scripts/Kbuild.include', line 7)
+squote := '
+# makefile (from 'Makefile', line 436)
+RCS_FIND_IGNORE := \( -name SCCS -o -name BitKeeper -o -name .svn -o -name CVS -o -name .pc -o -name .hg -o -name .git \) -prune -o
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6bd480f2-756a-49f0-bd90-0903de6b03e0.sock
+# makefile (from 'include/config/auto.conf', line 114)
+CONFIG_CLKBLD_I8253 = y
+# makefile (from 'include/config/auto.conf', line 357)
+CONFIG_MICROCODE_OLD_INTERFACE = y
+# environment
+VSCODE_CWD = /home/labredes
+# makefile (from 'include/config/auto.conf', line 528)
+CONFIG_HID_ITE = y
+# makefile (from 'include/config/auto.conf', line 577)
+CONFIG_SND_VERBOSE_PROCFS = y
+# makefile (from 'Makefile', line 627)
+ARCH_AFLAGS := 
+# makefile (from 'include/config/auto.conf', line 730)
+CONFIG_USB_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 797)
+CONFIG_NLS_DEFAULT = "iso8859-1"
+# makefile (from 'include/config/auto.conf', line 653)
+CONFIG_SYNC_FILE = y
+# makefile (from 'include/config/auto.conf', line 257)
+CONFIG_INET_XFRM_MODE_TRANSPORT = y
+# makefile (from 'include/config/auto.conf', line 697)
+CONFIG_ARCH_HAS_FORTIFY_SOURCE = y
+# makefile (from 'scripts/Kbuild.include', line 133)
+cc-option-yn = $(call try-run, $(CC) -Werror $(KBUILD_CPPFLAGS) $(CC_OPTION_CFLAGS) $(1) -c -x c /dev/null -o "$$TMP",y,n)
+# makefile (from 'include/config/auto.conf', line 505)
+CONFIG_PARAVIRT = y
+# makefile (from 'include/config/auto.conf', line 366)
+CONFIG_I2C = y
+# makefile (from 'include/config/auto.conf', line 144)
+CONFIG_CPU_FREQ_GOV_PERFORMANCE = y
+# makefile (from 'include/config/auto.conf', line 241)
+CONFIG_USB_PCI = y
+# makefile (from 'include/config/auto.conf', line 488)
+CONFIG_PNP = y
+# makefile (from 'include/config/auto.conf', line 29)
+CONFIG_GLOB = y
+# makefile (from 'include/config/auto.conf', line 592)
+CONFIG_SND_PCI = y
+# makefile (from 'scripts/Kbuild.include', line 221)
+flags = $(foreach o,$($(1)),$(if $(filter -I%,$(o)),$(call addtree,$(o)),$(o)))
+# makefile (from 'Makefile', line 350)
+LD = $(CROSS_COMPILE)ld
+# makefile (from 'include/config/auto.conf', line 547)
+CONFIG_FONT_8x16 = y
+# makefile (from 'include/config/auto.conf', line 312)
+CONFIG_MQ_IOSCHED_DEADLINE = y
+# makefile (from 'include/config/auto.conf', line 208)
+CONFIG_DRM_QXL = y
+# makefile (from 'include/config/auto.conf', line 65)
+CONFIG_LEGACY_PTYS = y
+# makefile (from 'include/config/auto.conf', line 333)
+CONFIG_X86_PLATFORM_DEVICES = y
+# makefile (from 'include/config/auto.conf', line 415)
+CONFIG_IRQ_DOMAIN_HIERARCHY = y
+# makefile (from 'include/config/auto.conf', line 359)
+CONFIG_ARCH_SELECT_MEMORY_MODEL = y
+# makefile (from 'include/config/auto.conf', line 664)
+CONFIG_HYPERVISOR_GUEST = y
+# makefile (from 'include/config/auto.conf', line 184)
+CONFIG_HID_KENSINGTON = y
+# makefile (from 'include/config/auto.conf', line 377)
+CONFIG_GENERIC_FIND_FIRST_BIT = y
+# makefile (from 'include/config/auto.conf', line 447)
+CONFIG_X86_SMAP = y
+# makefile (from 'scripts/Kbuild.include', line 213)
+hdr-inst := -f ./scripts/Makefile.headersinst obj
+# environment
+LINUX_OVERRIDE_SRCDIR = ~LabSisop/linuxdistro/linux-4.13.9/
+# makefile (from 'include/config/auto.conf', line 188)
+CONFIG_CLKSRC_I8253 = y
+# makefile (from 'include/config/auto.conf', line 361)
+CONFIG_SERIAL_8250_DEPRECATED_OPTIONS = y
+# makefile (from 'arch/x86/Makefile', line 208)
+cfi := -DCONFIG_AS_CFI=1
+# makefile (from 'include/config/auto.conf', line 396)
+CONFIG_MEMORY_BALLOON = y
+# makefile (from 'include/config/auto.conf', line 435)
+CONFIG_CRYPTO_AES = y
+# makefile (from 'include/config/auto.conf', line 736)
+CONFIG_HW_RANDOM_VIRTIO = m
+# makefile (from 'include/config/auto.conf', line 712)
+CONFIG_ATA_PIIX = y
+# makefile (from 'include/config/auto.conf', line 239)
+CONFIG_CPU_FREQ = y
+ 
+# makefile (from 'include/config/auto.conf', line 352)
+CONFIG_SERIAL_8250_RUNTIME_UARTS = 4
+# makefile (from 'include/config/auto.conf', line 206)
+CONFIG_VIRTIO_CONSOLE = y
+# makefile (from 'scripts/Kbuild.include', line 90)
+try-run = $(shell set -e; TMP="$(TMPOUT).$$$$.tmp"; TMPO="$(TMPOUT).$$$$.o"; if ($(1)) >/dev/null 2>&1; then echo "$(2)"; else echo "$(3)"; fi; rm -f "$$TMP" "$$TMPO")
+# makefile (from 'include/config/auto.conf', line 177)
+CONFIG_NET_CADENCE = y
+# makefile (from 'include/config/auto.conf', line 688)
+CONFIG_IRQ_FORCED_THREADING = y
+# makefile (from 'include/config/auto.conf', line 317)
+CONFIG_UNIX = y
+# makefile (from 'include/config/auto.conf', line 726)
+CONFIG_HAVE_KERNEL_LZO = y
+# makefile (from 'scripts/Kbuild.include', line 261)
+any-prereq = $(filter-out $(PHONY),$?) $(filter-out $(PHONY) $(wildcard $^),$^)
+# makefile (from 'include/config/auto.conf', line 82)
+CONFIG_HID_CHERRY = y
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 830)
+KBUILD_CPPFLAGS := -D__KERNEL__  
+# makefile (from 'Makefile', line 318)
+KBUILD_BUILTIN := 1
+# makefile (from 'include/config/auto.conf', line 655)
+CONFIG_OLD_SIGACTION = y
+# makefile (from 'include/config/auto.conf', line 326)
+CONFIG_FONT_SUPPORT = y
+# makefile (from 'arch/x86/Makefile', line 66)
+biarch := -m32
+# makefile (from 'include/config/auto.conf', line 270)
+CONFIG_NET_VENDOR_RENESAS = y
+# makefile (from 'include/config/auto.conf', line 401)
+CONFIG_SATA_PMP = y
+# makefile (from 'include/config/auto.conf', line 47)
+CONFIG_8139CP = y
+# makefile (from 'include/config/auto.conf', line 385)
+CONFIG_FW_LOADER = y
+# makefile (from 'include/config/auto.conf', line 539)
+CONFIG_IO_DELAY_TYPE_NONE = 3
+# makefile (from 'include/config/auto.conf', line 21)
+CONFIG_FLATMEM_MANUAL = y
+# makefile (from 'include/config/auto.conf', line 585)
+CONFIG_CRYPTO_MANAGER = m
+# makefile (from 'include/config/auto.conf', line 400)
+CONFIG_ARCH_WANT_GENERAL_HUGETLB = y
+# environment
+VSCODE_LOG_STACK = false
+# makefile (from 'include/config/auto.conf', line 525)
+CONFIG_NET_VENDOR_SAMSUNG = y
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'include/config/auto.conf', line 83)
+CONFIG_BCMA_POSSIBLE = y
+# makefile (from 'scripts/Kbuild.include', line 189)
+build := -f ./scripts/Makefile.build obj
+# makefile (from 'include/config/auto.conf', line 509)
+CONFIG_GENERIC_IRQ_EFFECTIVE_AFF_MASK = y
+# makefile (from 'include/config/auto.conf', line 11)
+CONFIG_INPUT_KEYBOARD = y
+# makefile (from 'arch/x86/Makefile', line 260)
+libs-y = arch/x86/lib/
+# makefile (from 'include/config/auto.conf', line 311)
+CONFIG_MODULES = y
+# makefile (from 'include/config/auto.conf', line 628)
+CONFIG_NR_CPUS = 8
+# makefile (from 'Makefile', line 209)
+objtree := .
+# makefile (from 'include/config/auto.conf', line 95)
+CONFIG_DNOTIFY = y
+# makefile (from 'scripts/Kbuild.include', line 138)
+cc-disable-warning = $(call try-run, $(CC) -Werror $(KBUILD_CPPFLAGS) $(CC_OPTION_CFLAGS) -W$(strip $(1)) -c -x c /dev/null -o "$$TMP",-Wno-$(strip $(1)))
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm/data/labredes
+# makefile (from 'include/config/auto.conf', line 702)
+CONFIG_HAVE_ARCH_TRACEHOOK = y
+# makefile (from 'include/config/auto.conf', line 564)
+CONFIG_MISC_FILESYSTEMS = y
+# makefile (from 'include/config/auto.conf', line 617)
+CONFIG_INLINE_SPIN_UNLOCK_IRQ = y
+# makefile (from 'arch/x86/Makefile_32.cpu', line 45)
+cflags- = -march=i486 -march=i586 -march=i586 -march=pentium-mmx -march=i686 $(call tune,pentium2) -march=i686 $(call tune,pentium3) -march=i686 $(call tune,pentium3) -march=i686 $(call tune,pentium4) -march=k6 -march=athlon $(call cc-option,-march=k8,-march=athlon) -march=i686 -falign-functions=0 -falign-jumps=0 -falign-loops=0 -march=i686 $(call tune,pentium3) -falign-functions=0 -falign-jumps=0 -falign-loops=0 $(call cc-option,-march=winchip-c6,-march=i586) $(call cc-option,-march=winchip2,-march=i586) $(call cc-option,-march=c3,-march=i486) -falign-functions=0 -falign-jumps=0 -falign-loops=0 $(call cc-option,-march=c3-2,-march=i686) -march=i686 -march=i686 $(call tune,core2) $(call cc-option,-march=atom,$(call cc-option,-march=core2,-march=i686)) $(call cc-option,-mtune=atom,$(call cc-option,-mtune=generic)) -march=i486 -march=pentium-mmx $(call cc-option,-march=geode,-march=pentium-mmx) $(call tune,generic,$(call tune,i686))
+# makefile (from 'include/config/auto.conf', line 427)
+CONFIG_HAVE_HARDLOCKUP_DETECTOR_PERF = y
+# environment
+XDG_SESSION_DESKTOP = lightdm-xsession
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# makefile (from 'include/config/auto.conf', line 718)
+CONFIG_BLK_DEV = y
+# makefile (from 'include/config/auto.conf', line 69)
+CONFIG_SERIAL_8250 = y
+# makefile (from 'include/config/auto.conf', line 404)
+CONFIG_HAS_IOMEM = y
+# makefile (from 'include/config/auto.conf', line 363)
+CONFIG_GENERIC_PCI_IOMAP = y
+# makefile (from 'include/config/auto.conf', line 576)
+CONFIG_RCU_CPU_STALL_TIMEOUT = 21
+# makefile (from 'include/config/auto.conf', line 389)
+CONFIG_PCI_QUIRKS = y
+# makefile (from 'include/config/auto.conf', line 336)
+CONFIG_CPU_IDLE = y
+# makefile (from 'include/config/auto.conf', line 147)
+CONFIG_GENERIC_EARLY_IOREMAP = y
+# makefile (from 'include/config/auto.conf', line 201)
+CONFIG_NET_VENDOR_EXAR = y
+# makefile (from 'include/config/auto.conf', line 410)
+CONFIG_HAVE_NET_DSA = y
+# makefile (from 'include/config/auto.conf', line 774)
+CONFIG_BLK_DEV_SD = y
+ 
+# makefile (from 'Makefile', line 485)
+no-dot-config-targets := clean mrproper distclean cscope gtags TAGS tags help% %docs check% coccicheck include/generated/uapi/linux/version.h headers_% archheaders archscripts kernelversion %src-pkg
+# makefile (from 'include/config/auto.conf', line 497)
+CONFIG_DEVMEM = y
+# makefile (from 'include/config/auto.conf', line 553)
+CONFIG_ARCH_HAS_CACHE_LINE_SIZE = y
+# makefile (from 'Makefile', line 302)
+HOSTCXX = g++
+# makefile (from 'include/config/auto.conf', line 108)
+CONFIG_DRM_VIRTIO_GPU = y
+# makefile (from 'include/config/auto.conf', line 741)
+CONFIG_DOUBLEFAULT = y
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'include/config/auto.conf', line 676)
+CONFIG_TREE_SRCU = y
+# makefile (from 'include/config/auto.conf', line 14)
+CONFIG_CRC32 = y
+# makefile (from 'include/config/auto.conf', line 684)
+CONFIG_NET_PACKET_ENGINE = y
+# makefile (from 'include/config/auto.conf', line 46)
+CONFIG_DEFAULT_SECURITY_DAC = y
+# makefile (from 'arch/x86/Makefile', line 282)
+BOOT_TARGETS = bzlilo bzdisk fdimage fdimage144 fdimage288 isoimage
+# makefile (from 'include/config/auto.conf', line 601)
+CONFIG_GENERIC_HWEIGHT = y
+# makefile (from 'include/config/auto.conf', line 217)
+CONFIG_DEFAULT_CFQ = y
+# makefile (from 'include/config/auto.conf', line 430)
+CONFIG_X86_DEBUGCTLMSR = y
+# environment
+PWD = /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile (from 'include/config/auto.conf', line 549)
+CONFIG_VT_CONSOLE_SLEEP = y
+# makefile (from 'include/config/auto.conf', line 530)
+CONFIG_SERIAL_CORE = y
+# makefile (from 'arch/x86/Makefile', line 217)
+avx_instr := -DCONFIG_AS_AVX=1
+# makefile (from 'include/config/auto.conf', line 94)
+CONFIG_DEVTMPFS_MOUNT = y
+# makefile (from 'Makefile', line 822)
+KBUILD_ARFLAGS := D
+# makefile (from 'Makefile', line 422)
+OBJCOPYFLAGS := 
+# makefile (from 'Makefile', line 210)
+src := .
+# makefile (from 'include/config/auto.conf', line 346)
+CONFIG_VIRTIO_PCI_LEGACY = y
+# makefile (from 'arch/x86/Makefile', line 275)
+drivers-y = arch/x86/pci/ arch/x86/power/ arch/x86/video/
+# makefile (from 'include/config/auto.conf', line 441)
+CONFIG_NET_VENDOR_SMSC = y
+# makefile (from 'include/config/auto.conf', line 19)
+CONFIG_ARCH_HAS_SET_MEMORY = y
+# makefile (from 'include/config/auto.conf', line 88)
+CONFIG_TIMERFD = y
+# makefile (from 'include/config/auto.conf', line 789)
+CONFIG_CLKEVT_I8253 = y
+# makefile (from 'include/config/auto.conf', line 460)
+CONFIG_ARCH_MIGHT_HAVE_PC_SERIO = y
+# makefile (from 'Makefile', line 491)
+mixed-targets := 0
+# makefile (from 'include/config/auto.conf', line 455)
+CONFIG_ACPI_PROCESSOR_IDLE = y
+# makefile (from 'include/config/auto.conf', line 642)
+CONFIG_HAVE_SYSCALL_TRACEPOINTS = y
+# makefile (from 'include/config/auto.conf', line 633)
+CONFIG_FIRMWARE_IN_KERNEL = y
+# makefile (from 'include/config/auto.conf', line 749)
+CONFIG_SYSFS_SYSCALL = y
+# makefile (from 'include/config/auto.conf', line 318)
+CONFIG_USB_NET_DRIVERS = y
+# makefile (from 'include/config/auto.conf', line 709)
+CONFIG_NET_VENDOR_SOLARFLARE = y
+# makefile (from 'include/config/auto.conf', line 782)
+CONFIG_CRYPTO_BLKCIPHER = m
+# makefile (from 'include/config/auto.conf', line 406)
+CONFIG_CRYPTO_ACOMP2 = y
+# makefile (from 'include/config/auto.conf', line 98)
+CONFIG_ENABLE_MUST_CHECK = y
+# default
+.RECIPEPREFIX := 
+# makefile (from 'include/config/auto.conf', line 416)
+CONFIG_PACKET = y
+# makefile (from 'arch/x86/Makefile', line 216)
+asinstr :=  -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1
+# makefile (from 'include/config/auto.conf', line 166)
+CONFIG_X86_INTEL_PSTATE = y
+# makefile (from 'scripts/Kbuild.include', line 113)
+__cc-option = $(call try-run, $(1) -Werror $(2) $(3) -c -x c /dev/null -o "$$TMP",$(3),$(4))
+# makefile (from 'scripts/Kbuild.include', line 195)
+modbuiltin := -f ./scripts/Makefile.modbuiltin obj
+# makefile (from 'Makefile', line 628)
+ARCH_CFLAGS := 
+# makefile (from 'arch/x86/Makefile', line 318)
+define archhelp
+  echo  '* bzImage      - Compressed kernel image (arch/x86/boot/bzImage)'
+  echo  '  install      - Install kernel using'
+  echo  '                  (your) ~/bin/$(INSTALLKERNEL) or'
+  echo  '                  (distribution) /sbin/$(INSTALLKERNEL) or'
+  echo  '                  install to $$(INSTALL_PATH) and run lilo'
+  echo  '  fdimage      - Create 1.4MB boot floppy image (arch/x86/boot/fdimage)'
+  echo  '  fdimage144   - Create 1.4MB boot floppy image (arch/x86/boot/fdimage)'
+  echo  '  fdimage288   - Create 2.8MB boot floppy image (arch/x86/boot/fdimage)'
+  echo  '  isoimage     - Create a boot CD-ROM image (arch/x86/boot/image.iso)'
+  echo  '                  bzdisk/fdimage*/isoimage also accept:'
+  echo  '                  FDARGS="..."  arguments for the booted kernel'
+  echo  '                  FDINITRD=file initrd for the booted kernel'
+endef
+# makefile (from 'include/config/auto.conf', line 673)
+CONFIG_HAVE_FUNCTION_GRAPH_TRACER = y
+# makefile (from 'include/config/auto.conf', line 810)
+CONFIG_MMU = y
+# makefile (from 'include/config/auto.conf', line 216)
+CONFIG_SPARSE_IRQ = y
+# makefile (from 'Makefile', line 361)
+DEPMOD = /sbin/depmod
+# makefile (from 'include/config/auto.conf', line 452)
+CONFIG_PRINTK_NMI = y
+# makefile (from 'include/config/auto.conf', line 314)
+ 
+CONFIG_SOUND = y
+# environment
+VSCODE_CODE_CACHE_PATH = /home/labredes/.config/Code/CachedData/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+# makefile (from 'include/config/auto.conf', line 503)
+CONFIG_HAVE_UID16 = y
+# makefile (from 'include/config/auto.conf', line 39)
+CONFIG_CRYPTO_MANAGER_DISABLE_TESTS = y
+# makefile (from 'include/config/auto.conf', line 73)
+CONFIG_NEED_PER_CPU_PAGE_FIRST_CHUNK = y
+# makefile (from 'include/config/auto.conf', line 313)
+CONFIG_DUMMY_CONSOLE_COLUMNS = 80
+# makefile (from 'include/config/auto.conf', line 280)
+CONFIG_PCSPKR_PLATFORM = y
+# makefile (from 'include/config/auto.conf', line 723)
+CONFIG_DRM_PANEL = y
+# makefile (from 'include/config/auto.conf', line 446)
+CONFIG_INET_XFRM_MODE_TUNNEL = y
+# makefile (from 'include/config/auto.conf', line 59)
+CONFIG_ARCH_SPARSEMEM_ENABLE = y
+# makefile (from 'include/config/auto.conf', line 155)
+CONFIG_TMPFS_POSIX_ACL = y
+# makefile (from 'include/config/auto.conf', line 296)
+CONFIG_ARCH_HAS_FAST_MULTIPLIER = y
+# makefile (from 'include/config/auto.conf', line 118)
+CONFIG_ARCH_HAS_MMIO_FLUSH = y
+# makefile (from 'include/config/auto.conf', line 117)
+CONFIG_PERF_EVENTS_INTEL_RAPL = y
+# makefile (from 'include/config/auto.conf', line 172)
+CONFIG_USB_EHCI_PCI = y
+# makefile (from 'Makefile', line 482)
+version_h := include/generated/uapi/linux/version.h
+# makefile (from 'include/config/auto.conf', line 23)
+CONFIG_FIRMWARE_MEMMAP = y
+# makefile (from 'include/config/auto.conf', line 780)
+CONFIG_BITREVERSE = y
+# makefile (from 'include/config/auto.conf', line 487)
+CONFIG_NET_VENDOR_I825XX = y
+# makefile (from 'include/config/auto.conf', line 740)
+CONFIG_DRM = y
+# makefile (from 'include/config/auto.conf', line 164)
+CONFIG_POWER_SUPPLY = y
+# environment
+XDG_VTNR = 7
+# makefile (from 'include/config/auto.conf', line 325)
+CONFIG_XPS = y
+# makefile (from 'include/config/auto.conf', line 294)
+CONFIG_CONSOLE_LOGLEVEL_DEFAULT = 7
+# makefile (from 'include/config/auto.conf', line 630)
+CONFIG_HAVE_EXIT_THREAD = y
+# makefile (from 'include/config/auto.conf', line 807)
+CONFIG_INPUT = y
+# makefile (from 'include/config/auto.conf', line 412)
+CONFIG_INPUT_EVDEV = y
+# makefile (from 'include/config/auto.conf', line 18)
+CONFIG_SECCOMP = y
+# makefile (from 'include/config/auto.conf', line 705)
+CONFIG_HAVE_PERF_EVENTS = y
+# makefile (from 'include/config/auto.conf', line 631)
+CONFIG_SND_SUPPORT_OLD_API = y
+# makefile (from 'include/config/auto.conf', line 61)
+CONFIG_NAMESPACES = y
+# makefile (from 'Makefile', line 298)
+HOST_LFS_LDFLAGS := 
+# makefile (from 'Makefile', line 1708)
+cmd_crmodverdir = $(Q)mkdir -p $(MODVERDIR) $(if $(KBUILD_MODULES),; rm -f $(MODVERDIR)/*)
+# makefile (from 'include/config/auto.conf', line 175)
+CONFIG_LOG_CPU_MAX_BUF_SHIFT = 12
+# makefile (from 'include/config/auto.conf', line 677)
+CONFIG_CRYPTO_NULL2 = y
+# makefile (from 'include/config/auto.conf', line 733)
+CONFIG_NET_VENDOR_SIS = y
+# makefile (from 'include/config/auto.conf', line 371)
+CONFIG_FRAME_POINTER = y
+# makefile (from 'include/config/auto.conf', line 680)
+CONFIG_BASE_SMALL = 0
+# makefile (from 'include/config/auto.conf', line 418)
+CONFIG_CRYPTO_AKCIPHER2 = y
+# makefile (from 'Makefile', line 406)
+KBUILD_CFLAGS_KERNEL := 
+# environment
+SHLVL = 0
+# makefile (from 'include/config/auto.conf', line 669)
+CONFIG_HW_RANDOM = m
+# makefile (from 'include/config/auto.conf', line 160)
+CONFIG_USELIB = y
+# makefile (from 'include/config/auto.conf', line 811)
+CONFIG_INLINE_WRITE_UNLOCK = y
+# makefile (from 'include/config/auto.conf', line 425)
+CONFIG_SERIAL_8250_PNP = y
+# makefile (from 'arch/x86/Makefile', line 17)
+cc_stack_align_opt := -mpreferred-stack-boundary
+# makefile (from 'include/config/auto.conf', line 513)
+CONFIG_NET_VENDOR_BROCADE = y
+# makefile (from 'include/config/auto.conf', line 518)
+CONFIG_VIRTIO = y
+# makefile (from 'include/config/auto.conf', line 711)
+CONFIG_THERMAL_DEFAULT_GOV_STEP_WISE = y
+# makefile (from 'include/config/auto.conf', line 700)
+CONFIG_THREAD_INFO_IN_TASK = y
+# makefile (from 'Makefile', line 873)
+MODLIB = $(INSTALL_MOD_PATH)/lib/modules/$(KERNELRELEASE)
+# makefile (from 'scripts/Kbuild.include', line 37)
+silent_kecho := :
+# makefile (from 'include/config/auto.conf', line 285)
+CONFIG_THERMAL_EMERGENCY_POWEROFF_DELAY_MS = 0
+# makefile (from 'include/config/auto.conf', line 253)
+CONFIG_ALLOW_DEV_COREDUMP = y
+# makefile (from 'Makefile', line 413)
+KERNELRELEASE = $(shell cat include/config/kernel.release 2> /dev/null)
+# environment
+MAKEOVERRIDES = ${-*-command-variables-*-}
+# makefile (from 'include/config/auto.conf', line 784)
+CONFIG_X86_PAT = y
+# makefile (from 'include/config/auto.conf', line 514)
+CONFIG_DEFAULT_MMAP_MIN_ADDR = 4096
+# makefile (from 'include/config/auto.conf', line 788)
+CONFIG_AIO = y
+# makefile (from 'Makefile', line 409)
+ 
+KBUILD_CFLAGS_MODULE := -DMODULE
+# makefile (from 'include/config/auto.conf', line 682)
+CONFIG_COMPACTION = y
+# default
+MAKE_VERSION := 4.2.1
+# makefile (from 'include/config/auto.conf', line 771)
+CONFIG_X86_FAST_FEATURE_TESTS = y
+# environment
+USER = labredes
+# makefile (from 'include/config/auto.conf', line 133)
+CONFIG_ARCH_SUPPORTS_OPTIMIZED_INLINING = y
+# makefile (from 'Makefile', line 364)
+CHECK = sparse
+# makefile (from 'include/config/auto.conf', line 87)
+CONFIG_FB_SYS_FILLRECT = y
+# makefile (from 'include/config/auto.conf', line 36)
+CONFIG_USB_OHCI_LITTLE_ENDIAN = y
+# makefile (from 'include/config/auto.conf', line 57)
+CONFIG_MOUSE_PS2_SMBUS = y
+# makefile (from 'include/config/auto.conf', line 448)
+CONFIG_VGA_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 268)
+CONFIG_CC_STACKPROTECTOR_NONE = y
+# makefile (from 'include/config/auto.conf', line 380)
+CONFIG_DRM_TTM = y
+# makefile (from 'include/config/auto.conf', line 62)
+CONFIG_HAVE_CMPXCHG_DOUBLE = y
+# makefile (from 'include/config/auto.conf', line 297)
+CONFIG_NET_VENDOR_REALTEK = y
+# makefile (from 'include/config/auto.conf', line 360)
+CONFIG_CRYPTO_MANAGER2 = y
+# makefile (from 'include/config/auto.conf', line 310)
+CONFIG_PRINTK_SAFE_LOG_BUF_SHIFT = 13
+# makefile (from 'include/config/auto.conf', line 587)
+CONFIG_RT_MUTEXES = y
+# makefile (from 'include/config/auto.conf', line 481)
+CONFIG_PREEMPT_NONE = y
+# makefile (from 'include/config/auto.conf', line 215)
+CONFIG_PGTABLE_LEVELS = 2
+# makefile (from 'include/config/auto.conf', line 103)
+CONFIG_FB_SYS_IMAGEBLIT = y
+# makefile (from 'include/config/auto.conf', line 351)
+CONFIG_I8253_LOCK = y
+# makefile (from 'include/config/auto.conf', line 302)
+CONFIG_USER_STACKTRACE_SUPPORT = y
+# makefile (from 'include/config/auto.conf', line 661)
+CONFIG_RPS = y
+# makefile (from 'include/config/auto.conf', line 616)
+CONFIG_I2C_HELPER_AUTO = y
+# makefile (from 'include/config/auto.conf', line 387)
+CONFIG_COMMON_CLK = y
+# makefile (from 'include/config/auto.conf', line 710)
+CONFIG_DEBUG_MEMORY_INIT = y
+# makefile (from 'Makefile', line 926)
+mod_sign_cmd = true
+# makefile (from 'include/config/auto.conf', line 383)
+CONFIG_ARCH_DISCARD_MEMBLOCK = y
+# makefile (from 'include/config/auto.conf', line 739)
+CONFIG_PCI_DIRECT = y
+# makefile (from 'include/config/auto.conf', line 420)
+CONFIG_SND_HDA_CORE = y
+# makefile (from 'include/config/auto.conf', line 602)
+CONFIG_CGROUPS = y
+# makefile (from 'scripts/Kbuild.include', line 167)
+ld-option = $(call try-run, $(CC) -x c /dev/null -c -o "$$TMPO" ; $(LD) $(1) "$$TMPO" -o "$$TMP",$(1),$(2))
+# makefile (from 'include/config/auto.conf', line 694)
+CONFIG_NET_VENDOR_NATSEMI = y
+# makefile (from 'include/config/auto.conf', line 431)
+CONFIG_RTC_LIB = y
+# makefile (from 'include/config/auto.conf', line 558)
+CONFIG_FB_CMDLINE = y
+# makefile (from 'include/config/auto.conf', line 178)
+CONFIG_HID_CYPRESS = y
+# makefile (from 'Makefile', line 303)
+HOSTCFLAGS := -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89 
+# makefile (from 'Makefile', line 1653)
+zap-slash = $(filter-out .,$(patsubst %/,%,$(dir $@)))
+# makefile (from 'include/config/auto.conf', line 508)
+CONFIG_LOCALVERSION = ""
+# makefile (from 'include/config/auto.conf', line 165)
+CONFIG_NLS = y
+# makefile (from 'include/config/auto.conf', line 584)
+CONFIG_NET_VENDOR_TEHUTI = y
+# makefile (from 'scripts/Kbuild.include', line 207)
+clean := -f ./scripts/Makefile.clean obj
+# makefile (from 'include/config/auto.conf', line 101)
+CONFIG_SERIO = y
+# makefile (from 'include/config/auto.conf', line 221)
+CONFIG_DEBUG_BUGVERBOSE = y
+# default
+.VARIABLES := 
+# makefile (from 'scripts/Kbuild.include', line 118)
+CC_OPTION_CFLAGS = $(filter-out $(GCC_PLUGINS_CFLAGS),$(KBUILD_CFLAGS))
+# makefile (from 'scripts/Kbuild.include', line 225)
+echo-cmd = $(if $($(quiet)cmd_$(1)), echo '  $(call escsq,$($(quiet)cmd_$(1)))$(echo-why)';)
+# makefile (from 'include/config/auto.conf', line 507)
+CONFIG_COMPAT_BRK = y
+# makefile (from 'include/config/auto.conf', line 86)
+CONFIG_PRINTK = y
+# makefile (from 'include/config/auto.conf', line 183)
+CONFIG_HAVE_ATOMIC_IOMAP = y
+# makefile (from 'scripts/Kbuild.include', line 181)
+ld-ifversion = $(shell [ $(ld-version) $(1) $(2) ] && echo $(3) || echo $(4))
+# makefile (from 'include/config/auto.conf', line 698)
+CONFIG_SYSCTL = y
+ 
+# makefile (from 'include/config/auto.conf', line 759)
+CONFIG_HAVE_MIXED_BREAKPOINTS_REGS = y
+# makefile (from 'scripts/Kbuild.include', line 257)
+make-cmd = $(call escsq,$(subst #,\#,$(subst $$,$$$$,$(cmd_$(1)))))
+# makefile (from 'include/config/auto.conf', line 482)
+CONFIG_DMI_SCAN_MACHINE_NON_EFI_FALLBACK = y
+# makefile (from 'include/config/auto.conf', line 526)
+CONFIG_SCSI_MOD = y
+# makefile
+MAKEFLAGS = pqrRw -I/home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom --no-print-directory -- $(MAKEOVERRIDES)
+# makefile (from 'include/config/auto.conf', line 675)
+CONFIG_HAVE_CMPXCHG_LOCAL = y
+# environment
+LC_ALL = C
+# makefile (from 'include/config/auto.conf', line 607)
+CONFIG_HAVE_ACPI_APEI = y
+# makefile (from 'include/config/auto.conf', line 596)
+CONFIG_ARCH_HAS_STRICT_KERNEL_RWX = y
+# environment
+MFLAGS = -pqrRw -I/home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom --no-print-directory
+# makefile (from 'include/config/auto.conf', line 646)
+CONFIG_I2C_COMPAT = y
+# makefile (from 'include/config/auto.conf', line 578)
+CONFIG_PARAVIRT_CLOCK = y
+# makefile (from 'include/config/auto.conf', line 770)
+CONFIG_MICROCODE_INTEL = y
+# makefile (from 'include/config/auto.conf', line 798)
+CONFIG_ACPI_CONTAINER = y
+# makefile (from 'include/config/auto.conf', line 581)
+CONFIG_NEED_SG_DMA_LENGTH = y
+# makefile (from 'Makefile', line 305)
+HOSTCXXFLAGS := -O2 
+# makefile (from 'include/config/auto.conf', line 761)
+CONFIG_ATA_BMDMA = y
+# makefile (from 'Makefile', line 80)
+quiet = quiet_
+# makefile (from 'include/config/auto.conf', line 687)
+CONFIG_SCSI_LOWLEVEL = y
+# makefile (from 'include/config/auto.conf', line 52)
+CONFIG_BQL = y
+# makefile (from 'include/config/auto.conf', line 161)
+CONFIG_VT = y
+# makefile (from 'Makefile', line 357)
+OBJDUMP = $(CROSS_COMPILE)objdump
+# makefile (from 'include/config/auto.conf', line 562)
+CONFIG_ARCH_HAS_DEBUG_VIRTUAL = y
+# environment
+GDK_BACKEND = x11
+# makefile (from 'include/config/auto.conf', line 100)
+CONFIG_OLD_SIGSUSPEND3 = y
+# makefile (from 'include/config/auto.conf', line 42)
+CONFIG_GENERIC_SMP_IDLE_THREAD = y
+# makefile (from 'include/config/auto.conf', line 634)
+CONFIG_SYSFS = y
+# makefile (from 'include/config/auto.conf', line 409)
+CONFIG_SND_PCM = y
+# makefile (from 'include/config/auto.conf', line 467)
+CONFIG_SND_HDA_PREALLOC_SIZE = 64
+# makefile (from 'include/config/auto.conf', line 681)
+CONFIG_CRYPTO_BLKCIPHER2 = y
+# makefile (from 'scripts/Kbuild.include', line 232)
+objectify = $(foreach o,$(1),$(if $(filter /%,$(o)),$(o),$(obj)/$(o)))
+# makefile (from 'Makefile', line 349)
+AS = $(CROSS_COMPILE)as
+# makefile (from 'include/config/auto.conf', line 707)
+CONFIG_HAVE_ALIGNED_STRUCT_PAGE = y
+# makefile (from 'include/config/auto.conf', line 223)
+CONFIG_SND_HDA_INTEL = y
+# makefile (from 'include/config/auto.conf', line 51)
+CONFIG_CRYPTO_AEAD = m
+# makefile (from 'include/config/auto.conf', line 63)
+CONFIG_FRAMEBUFFER_CONSOLE_DETECT_PRIMARY = y
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'include/config/auto.conf', line 480)
+CONFIG_GENERIC_IOMAP = y
+# makefile (from 'include/config/auto.conf', line 398)
+CONFIG_ARCH_SUPPORTS_DEFERRED_STRUCT_PAGE_INIT = y
+# makefile (from 'include/config/auto.conf', line 388)
+CONFIG_PCI = y
+# makefile (from 'include/config/auto.conf', line 260)
+CONFIG_X86_EXTENDED_PLATFORM = y
+# environment
+DISPLAY = :0
+# makefile (from 'scripts/Kbuild.include', line 201)
+dtbinst := -f scripts/Makefile.dtbinst obj
+# makefile (from 'include/config/auto.conf', line 801)
+CONFIG_CRYPTO_AEAD2 = y
+# makefile (from 'include/config/auto.conf', line 293)
+CONFIG_VIRTIO_PCI = y
+# makefile (from 'include/config/auto.conf', line 77)
+CONFIG_HAVE_DMA_CONTIGUOUS = y
+# makefile (from 'Makefile', line 865)
+INSTALL_DTBS_PATH = $(INSTALL_PATH)/dtbs/$(KERNELRELEASE)
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'scripts/Kbuild.include', line 229)
+cmd = @$(echo-cmd) $(cmd_$(1))
+# makefile (from 'include/config/auto.conf', line 637)
+CONFIG_HIGHMEM4G = y
+# makefile (from 'include/config/auto.conf', line 804)
+CONFIG_PHYSICAL_START = 0x1000000
+# makefile (from 'include/config/auto.conf', line 181)
+CONFIG_BLK_MQ_PCI = y
+# makefile (from 'include/config/auto.conf', line 613)
+CONFIG_NET_VENDOR_VIA = y
+# makefile (from 'include/config/auto.conf', line 620)
+ 
+CONFIG_NET_VENDOR_ARC = y
+# makefile (from 'Makefile', line 342)
+KBUILD_SRC := 
+# makefile (from 'include/config/auto.conf', line 701)
+CONFIG_HAVE_C_RECORDMCOUNT = y
+# makefile (from 'include/config/auto.conf', line 802)
+CONFIG_MOUSE_PS2 = y
+# automatic
+<F = $(notdir $<)
+# makefile (from 'include/config/auto.conf', line 320)
+CONFIG_CRYPTO_HASH2 = y
+# makefile (from 'include/config/auto.conf', line 354)
+CONFIG_CRYPTO_RNG_DEFAULT = m
+# makefile (from 'include/config/auto.conf', line 393)
+CONFIG_MOUSE_PS2_ALPS = y
+# makefile (from 'include/config/auto.conf', line 408)
+CONFIG_EPOLL = y
+# makefile (from 'include/config/auto.conf', line 437)
+CONFIG_HAVE_HARDENED_USERCOPY_ALLOCATOR = y
+# makefile (from 'include/config/auto.conf', line 715)
+CONFIG_X86_32_SMP = y
+# makefile (from 'include/config/auto.conf', line 138)
+CONFIG_USB_STORAGE = y
+# makefile (from 'include/config/auto.conf', line 16)
+CONFIG_HAVE_AOUT = y
+# makefile (from 'include/config/auto.conf', line 272)
+CONFIG_SND_VMASTER = y
+# makefile (from 'include/config/auto.conf', line 125)
+CONFIG_ACPI = y
+# makefile (from 'include/config/auto.conf', line 567)
+CONFIG_HAVE_CC_STACKPROTECTOR = y
+# makefile (from 'include/config/auto.conf', line 337)
+CONFIG_CRYPTO_HASH = y
+# makefile (from 'include/config/auto.conf', line 748)
+CONFIG_PCI_GOANY = y
+# makefile (from 'include/config/auto.conf', line 809)
+CONFIG_HAVE_PERF_EVENTS_NMI = y
+# makefile (from 'include/config/auto.conf', line 421)
+CONFIG_DUMMY_CONSOLE_ROWS = 25
+# makefile (from 'include/config/auto.conf', line 375)
+CONFIG_HAVE_MMIOTRACE_SUPPORT = y
+# makefile (from 'arch/x86/Makefile', line 280)
+boot := arch/x86/boot
+# makefile (from 'include/config/auto.conf', line 492)
+CONFIG_CRYPTO_SHA256 = m
+# makefile (from 'include/config/auto.conf', line 384)
+CONFIG_X86_32_LAZY_GS = y
+# makefile (from 'include/config/auto.conf', line 339)
+CONFIG_LOG_BUF_SHIFT = 17
+# makefile (from 'include/config/auto.conf', line 182)
+CONFIG_CRYPTO_WORKQUEUE = y
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from 'Makefile', line 1698)
+quiet_cmd_rmfiles = $(if $(wildcard $(rm-files)),CLEAN   $(wildcard $(rm-files)))
+# makefile (from 'include/config/auto.conf', line 96)
+CONFIG_GENERIC_NET_UTILS = y
+# makefile (from 'include/config/auto.conf', line 274)
+CONFIG_HAVE_ARCH_AUDITSYSCALL = y
+# makefile (from 'include/config/auto.conf', line 306)
+CONFIG_SGETMASK_SYSCALL = y
+# makefile (from 'include/config/auto.conf', line 240)
+CONFIG_DUMMY_CONSOLE = y
+# makefile (from 'include/config/auto.conf', line 775)
+CONFIG_PHYSICAL_ALIGN = 0x200000
+# makefile (from 'include/config/auto.conf', line 258)
+CONFIG_CLOCKSOURCE_VALIDATE_LAST_CYCLE = y
+# makefile (from 'include/config/auto.conf', line 224)
+CONFIG_MAY_USE_DEVLINK = y
+# makefile (from 'include/config/auto.conf', line 367)
+CONFIG_BINFMT_SCRIPT = y
+# makefile (from 'scripts/Kbuild.include', line 245)
+arg-check = $(filter-out $(subst $(space),$(space_escape),$(strip $(cmd_$@))), $(subst $(space),$(space_escape),$(strip $(cmd_$1))))
+# makefile (from 'arch/x86/Makefile', line 258)
+head-y := arch/x86/kernel/head_32.o arch/x86/kernel/head32.o arch/x86/kernel/ebda.o arch/x86/kernel/platform-quirks.o
+# makefile (from 'include/config/auto.conf', line 644)
+CONFIG_FB = y
+# makefile (from 'include/config/auto.conf', line 237)
+CONFIG_SERIAL_EARLYCON = y
+# makefile (from 'include/config/auto.conf', line 541)
+CONFIG_FB_CFB_FILLRECT = y
+# makefile (from 'scripts/Kbuild.include', line 102)
+as-option = $(call try-run, $(CC) $(KBUILD_CFLAGS) $(1) -c -x assembler /dev/null -o "$$TMP",$(1),$(2))
+# makefile (from 'Makefile', line 832)
+KBUILD_CFLAGS := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2  -march=i686 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1  -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables  -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2  --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024  -fno-stack-protector -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls  -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init    
+# makefile (from 'include/config/auto.conf', line 600)
+CONFIG_ARCH_MMAP_RND_BITS = 8
+ 
+# makefile (from 'include/config/auto.conf', line 484)
+CONFIG_TTY = y
+# makefile (from 'include/config/auto.conf', line 626)
+CONFIG_NLATTR = y
+# makefile (from 'scripts/Kbuild.include', line 23)
+basetarget = $(basename $(notdir $@))
+# automatic
+^F = $(notdir $^)
+# makefile (from 'include/config/auto.conf', line 573)
+CONFIG_HID_A4TECH = y
+# makefile (from 'include/config/auto.conf', line 556)
+CONFIG_NET_VENDOR_NVIDIA = y
+# makefile (from 'include/config/auto.conf', line 287)
+CONFIG_CRC16 = y
+# makefile (from 'include/config/auto.conf', line 629)
+CONFIG_SUSPEND_FREEZER = y
+# makefile (from 'include/config/auto.conf', line 483)
+CONFIG_SMP = y
+# makefile (from 'include/config/auto.conf', line 403)
+CONFIG_NET_VENDOR_ALACRITECH = y
+# makefile (from 'include/config/auto.conf', line 533)
+CONFIG_HAVE_DEBUG_STACKOVERFLOW = y
+# makefile (from 'include/config/auto.conf', line 742)
+CONFIG_INET6_XFRM_MODE_BEET = y
+# makefile (from 'include/config/auto.conf', line 445)
+CONFIG_HT_IRQ = y
+# makefile (from 'include/config/auto.conf', line 382)
+CONFIG_FB_CFB_IMAGEBLIT = y
+# makefile (from 'scripts/Kbuild.include', line 270)
+if_changed_dep = $(if $(strip $(any-prereq) $(arg-check) ), @set -e; $(cmd_and_fixdep), @:)
+# makefile (from 'include/config/auto.conf', line 368)
+CONFIG_MOUSE_PS2_CYPRESS = y
+# makefile (from 'include/config/auto.conf', line 115)
+CONFIG_PM_CLK = y
+# makefile (from 'include/config/auto.conf', line 121)
+CONFIG_ACPI_FAN = y
+# makefile (from 'scripts/Kbuild.include', line 217)
+addtree = $(if $(patsubst -I%,%,$(1)), $(if $(filter-out -I/% -I./% -I../%,$(1)),$(patsubst -I%,-I$(srctree)/%,$(1)),$(1)))
+# makefile (from 'include/config/auto.conf', line 301)
+CONFIG_USB_HID = y
+# makefile (from 'include/config/auto.conf', line 80)
+CONFIG_X86_SUPPORTS_MEMORY_FAILURE = y
+# makefile (from 'include/config/auto.conf', line 386)
+CONFIG_KALLSYMS = y
+# makefile (from 'include/config/auto.conf', line 432)
+CONFIG_X86_LOCAL_APIC = y
+# makefile (from 'include/config/auto.conf', line 150)
+CONFIG_HAVE_IDE = y
+# makefile (from 'arch/x86/Makefile', line 221)
+sha256_ni_instr := -DCONFIG_AS_SHA256_NI=1
+# makefile (from 'include/config/auto.conf', line 721)
+CONFIG_UNIX98_PTYS = y
+# makefile (from 'include/config/auto.conf', line 277)
+CONFIG_X86_16BIT = y
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'include/config/auto.conf', line 769)
+CONFIG_SWAP = y
+# makefile (from 'include/config/auto.conf', line 494)
+CONFIG_POSIX_TIMERS = y
+# makefile (from 'include/config/auto.conf', line 604)
+CONFIG_SND_HDA_POWER_SAVE_DEFAULT = 0
+# makefile (from 'include/config/auto.conf', line 520)
+CONFIG_X86_MCE_THRESHOLD = y
+# makefile (from 'Makefile', line 175)
+KBUILD_CHECKSRC = 0
+# makefile (from 'include/config/auto.conf', line 89)
+CONFIG_CRYPTO_AUTHENC = m
+# environment
+MAKELEVEL := 1
+# makefile (from 'arch/x86/Makefile_32.cpu', line 50)
+cflags-y = -march=i686 $(call cc-option,-Wa$(comma)-mtune=generic32,)
+# makefile (from 'include/config/auto.conf', line 506)
+CONFIG_HAVE_IOREMAP_PROT = y
+# makefile (from 'include/config/auto.conf', line 753)
+CONFIG_VIRTIO_BLK = y
+# makefile (from 'Makefile', line 483)
+old_version_h := include/linux/version.h
+# makefile (from 'include/config/auto.conf', line 579)
+CONFIG_SECTION_MISMATCH_WARN_ONLY = y
+# makefile (from 'include/config/auto.conf', line 316)
+CONFIG_ARCH_HIBERNATION_POSSIBLE = y
+# makefile (from 'include/config/auto.conf', line 451)
+CONFIG_SND_DRIVERS = y
+# makefile (from 'include/config/auto.conf', line 534)
+CONFIG_HID_MICROSOFT = y
+# makefile (from 'include/config/auto.conf', line 250)
+CONFIG_ARCH_HAS_CPU_RELAX = y
+# makefile (from 'include/config/auto.conf', line 543)
+CONFIG_HID = y
+# makefile (from 'include/config/auto.conf', line 743)
+CONFIG_UNUSED_SYMBOLS = y
+# makefile (from 'include/config/auto.conf', line 471)
+CONFIG_FONT_8x8 = y
+# makefile (from 'include/config/auto.conf', line 209)
+CONFIG_CRYPTO_JITTERENTROPY = m
+# makefile (from 'include/config/auto.conf', line 153)
+CONFIG_ARCH_WANT_BATCHED_UNMAP_TLB_FLUSH = y
+# makefile (from 'include/config/auto.conf', line 554)
+CONFIG_JBD2 = y
+# makefile (from 'include/config/auto.conf', line 708)
+CONFIG_NO_BOOTMEM = y
+# environment
+LANG = C
+# makefile (from 'include/config/auto.conf', line 56)
+CONFIG_DEVTMPFS = y
+# makefile (from 'include/config/auto.conf', line 81)
+CONFIG_COREDUMP = y
+# makefile (from 'include/config/auto.conf', line 78)
+CONFIG_DQL = y
+# makefile (from 'scripts/Kbuild.include', line 8)
+empty := 
+ 
+# makefile (from 'include/config/auto.conf', line 27)
+CONFIG_NETWORK_FILESYSTEMS = y
+# makefile (from 'include/config/auto.conf', line 568)
+CONFIG_COMPAT_32 = y
+# makefile (from 'include/config/auto.conf', line 609)
+CONFIG_ARCH_SUPPORTS_DEBUG_PAGEALLOC = y
+# makefile (from 'include/config/auto.conf', line 757)
+CONFIG_ARCH_RANDOM = y
+# makefile (from 'include/config/auto.conf', line 699)
+CONFIG_ARCH_HAS_GCOV_PROFILE_ALL = y
+# makefile (from 'include/config/auto.conf', line 728)
+CONFIG_IO_DELAY_TYPE_UDELAY = 2
+# makefile (from 'include/config/auto.conf', line 93)
+CONFIG_HAVE_ARCH_JUMP_LABEL = y
+# makefile (from 'Makefile', line 1615)
+CHECKSTACK_ARCH := x86
+# makefile (from 'include/config/auto.conf', line 210)
+CONFIG_NE2K_PCI = y
+# makefile (from 'include/config/auto.conf', line 259)
+CONFIG_ATA_ACPI = y
+# makefile (from 'include/config/auto.conf', line 276)
+CONFIG_PM_SLEEP_SMP = y
+# makefile (from 'include/config/auto.conf', line 501)
+CONFIG_IOSCHED_NOOP = y
+# variable set hash-table stats:
+# Load=1115/2048=54%, Rehash=1, Collisions=3070/3673=84%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 8665384): 70 files, no impossibilities.
+# /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello (device 2049, inode 4985713): No files, no impossibilities so far.
+
+# 70 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+scripts/basic/%: scripts_basic
+#  recipe to execute (from 'Makefile', line 452):
+	
+
+tools/%: FORCE
+#  recipe to execute (from 'Makefile', line 1636):
+	$(Q)mkdir -p $(objtree)/tools
+	$(Q)$(MAKE) LDFLAGS= MAKEFLAGS="$(tools_silent) $(filter --j% -j,$(MAKEFLAGS))" O=$(shell cd $(objtree) && /bin/pwd) subdir=tools -C $(src)/tools/ $*
+
+%.s: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1659):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.i: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1661):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.o: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1663):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.lst: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1665):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.s: %.S prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1667):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.o: %.S prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1669):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.symtypes: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1671):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%.ll: %.c prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1673):
+	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
+
+%/: prepare scripts FORCE
+#  recipe to execute (from 'Makefile', line 1683):
+	$(cmd_crmodverdir)
+	$(Q)$(MAKE) KBUILD_MODULES=$(if $(CONFIG_MODULES),1) \
+	$(build)=$(build-dir)
+
+%.ko: prepare scripts FORCE
+ 
+#  recipe to execute (from 'Makefile', line 1687):
+	$(cmd_crmodverdir)
+	$(Q)$(MAKE) KBUILD_MODULES=$(if $(CONFIG_MODULES),1)   \
+	$(build)=$(build-dir) $(@:.ko=.o)
+	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modpost
+
+# 12 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+/: prepare scripts FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1677):
+	$(cmd_crmodverdir)
+	$(Q)$(MAKE) KBUILD_MODULES=$(if $(CONFIG_MODULES),1) \
+	$(build)=$(build-dir)
+
+# Not a target:
+scripts/Makefile.gcc-plugins:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+outputmakefile:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+gcc-plugins: scripts_basic gcc-plugins-check
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'scripts/Makefile.gcc-plugins', line 83):
+	@:
+
+fdimage288: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+all: vmlinux bzImage
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+bzlilo: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+FORCE:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+vdso_install:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 309):
+	$(Q)$(MAKE) $(build)=arch/x86/entry/vdso $@
+
+.PHONY: _all all scripts_basic outputmakefile asm-generic uapi-asm-generic include/config/auto.conf bzImage bzlilo bzdisk fdimage fdimage144 fdimage288 isoimage install vdso_install gcc-plugins-check gcc-plugins crmodverdir Module.symvers _module_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello modules modules_install _emodinst_ _emodinst_post _clean_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello clean help prepare scripts includecheck versioncheck coccicheck namespacecheck export_report checkstack kernelrelease kernelversion image_name FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+modules: _module_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  recipe to execute (from 'Makefile', line 1515):
+	@$(kecho) '  Building modules, stage 2.';
+	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modpost
+
+scripts:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1553):
+	
+
+_module_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello: crmodverdir Module.symvers
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  recipe to execute (from 'Makefile', line 1512):
+	$(Q)$(MAKE) $(build)=$(patsubst _module_%,%,$@)
+
+kernelrelease:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1622):
+	@echo "$(KERNELVERSION)$$($(CONFIG_SHELL) $(srctree)/scripts/setlocalversion $(srctree))"
+
+# Not a target:
+scripts/Makefile.ubsan:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+versioncheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1590):
+	find $(srctree)/* $(RCS_FIND_IGNORE) \
+		-name '*.[hcS]' -type f -print | sort \
+		| xargs $(PERL) -w $(srctree)/scripts/checkversion.pl
+
+gcc-plugins-check: FORCE
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'scripts/Makefile.gcc-plugins', line 75):
+	@:
+
+_emodinst_post: _emodinst_
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1529):
+	$(call cmd,depmod)
+
+fdimage: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tags: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1577):
+	$(call cmd,tags)
+
+namespacecheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1598):
+	$(PERL) $(srctree)/scripts/namespace.pl
+
+image_name:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+ 
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1628):
+	@echo $(KBUILD_IMAGE)
+
+Makefile:
+#  Implicit rule search has not been done.
+#  Last modified 2022-04-26 08:48:47.351340793
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 124):
+	
+
+_all: modules
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+modules_install: _emodinst_ _emodinst_post
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+scripts/Makefile.extrawarn:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+asm-generic: uapi-asm-generic
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 468):
+	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.asm-generic \
+	            src=asm obj=arch/$(SRCARCH)/include/generated/asm
+
+prepare:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1552):
+	
+
+cscope: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1577):
+	$(call cmd,tags)
+
+/home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom/Makefile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 124):
+	
+
+_emodinst_:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1524):
+	$(Q)mkdir -p $(MODLIB)/$(install-dir)
+	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modinst
+
+# Not a target:
+arch/x86/Makefile_32.cpu:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1542):
+	@echo  '  Building external modules.'
+	@echo  '  Syntax: make -C path/to/kernel/src M=$$PWD target'
+	@echo  ''
+	@echo  '  modules         - default target, build the module(s)'
+	@echo  '  modules_install - install the module'
+	@echo  '  clean           - remove generated files in module directory only'
+	@echo  ''
+
+archprepare:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+archheaders:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 245):
+	$(Q)$(MAKE) $(build)=arch/x86/entry/syscalls all
+
+kernelversion:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1625):
+	@echo $(KERNELVERSION)
+
+checkstack:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1618):
+	$(OBJDUMP) -d vmlinux $$(find . -name '*.ko') | \
+	$(PERL) $(src)/scripts/checkstack.pl $(CHECKSTACK_ARCH)
+
+archclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 312):
+	$(Q)rm -rf $(objtree)/arch/i386
+	$(Q)rm -rf $(objtree)/arch/x86_64
+	$(Q)$(MAKE) $(clean)=$(boot)
+	$(Q)$(MAKE) $(clean)=arch/x86/tools
+	$(Q)$(MAKE) $(clean)=arch/x86/purgatory
+
+# Not a target:
+scripts/Makefile.kasan:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+samples/: headers_install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+_clean_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1535):
+	$(Q)$(MAKE) $(clean)=$(patsubst _clean_%,%,$@)
+
+# Not a target:
+arch/x86/Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bzImage: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 296):
+	$(Q)$(MAKE) $(build)=$(boot) $(KBUILD_IMAGE)
+	$(Q)mkdir -p $(objtree)/arch/$(UTS_MACHINE)/boot
+	$(Q)ln -fsn ../../x86/boot/bzImage $(objtree)/arch/$(UTS_MACHINE)/boot/$@
+
+# makefile (from 'Makefile', line 1537)
+clean: rm-dirs := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello/.tmp_versions
+# makefile (from 'Makefile', line 1538)
+clean: rm-files := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello/Module.symvers
+clean: _clean_/home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=2/32=6%, Rehash=0, Collisions=0/4=0%
+#  recipe to execute (from 'Makefile', line 1557):
+	$(call cmd,rmdirs)
+ 
+	$(call cmd,rmfiles)
+	@find $(if $(KBUILD_EXTMOD), $(KBUILD_EXTMOD), .) $(RCS_FIND_IGNORE) \
+		\( -name '*.[oas]' -o -name '*.ko' -o -name '.*.cmd' \
+		-o -name '*.ko.*' \
+		-o -name '*.dwo'  \
+		-o -name '*.su'  \
+		-o -name '.*.d' -o -name '.*.tmp' -o -name '*.mod.c' \
+		-o -name '*.symtypes' -o -name 'modules.order' \
+		-o -name modules.builtin -o -name '.tmp_*.o.*' \
+		-o -name '*.c.[012]*.*' \
+		-o -name '*.ll' \
+		-o -name '*.gcno' \) -type f -print | xargs rm -f
+
+.vmlinux.cmd:
+#  Implicit rule search has not been done.
+#  Last modified 2022-04-28 09:56:46.36446507
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 1717):
+		# Do not try to update included dependency files
+
+install:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 305):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+crmodverdir:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := crmodverdir
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
+#  recipe to execute (from 'Makefile', line 1499):
+	$(cmd_crmodverdir)
+
+uapi-asm-generic:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 471):
+	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.asm-generic \
+	            src=uapi/asm obj=arch/$(SRCARCH)/include/generated/uapi/asm
+
+scripts_basic:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 448):
+	$(Q)$(MAKE) $(build)=scripts/basic
+	$(Q)rm -f .tmp_quiet_recordmcount
+
+# Not a target:
+vmlinux:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bzdisk: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+# 'override' directive
+include/config/auto.conf: .SHELLSTATUS := 0
+include/config/auto.conf:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := include/config/auto.conf
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+ 
+# Load=9/32=28%, Rehash=0, Collisions=36/67=54%
+#  recipe to execute (from 'Makefile', line 596):
+	$(Q)test -e include/generated/autoconf.h -a -e $@ || (		\
+	echo >&2;							\
+	echo >&2 "  ERROR: Kernel configuration is invalid.";		\
+	echo >&2 "         include/generated/autoconf.h or $@ are missing.";\
+	echo >&2 "         Run 'make oldconfig && make prepare' on kernel src to fix it.";	\
+	echo >&2 ;							\
+	/bin/false)
+
+coccicheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1595):
+	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/$@
+
+# Not a target:
+headers_install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+includecheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1585):
+	find $(srctree)/* $(RCS_FIND_IGNORE) \
+		-name '*.[hcS]' -type f -print | sort \
+		| xargs $(PERL) -w $(srctree)/scripts/checkincludes.pl
+
+scripts/Kbuild.include:
+#  Implicit rule search has not been done.
+#  Last modified 2017-10-21 13:55:07
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 345):
+	
+
+Documentation/: headers_install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gtags: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1577):
+	$(call cmd,tags)
+
+tools/: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1632):
+	$(Q)mkdir -p $(objtree)/tools
+	$(Q)$(MAKE) LDFLAGS= MAKEFLAGS="$(tools_silent) $(filter --j% -j,$(MAKEFLAGS))" O=$(shell cd $(objtree) && /bin/pwd) subdir=tools -C $(src)/tools/
+
+TAGS: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1577):
+	$(call cmd,tags)
+
+export_report:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1601):
+	$(PERL) $(srctree)/scripts/export_report.pl
+
+isoimage: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+
+fdimage144: vmlinux
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 301):
+	$(Q)$(MAKE) $(build)=$(boot) $@
+ 
+
+archscripts: scripts_basic
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'arch/x86/Makefile', line 239):
+	$(Q)$(MAKE) $(build)=arch/x86/tools relocs
+
+Module.symvers:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 1503):
+	@test -e $(objtree)/Module.symvers || ( \
+	echo; \
+	echo "  WARNING: Symbol version dump $(objtree)/Module.symvers"; \
+	echo "           is missing; modules will have no dependencies and modversions."; \
+	echo )
+
+# files hash-table stats:
+# Load=67/1024=7%, Rehash=0, Collisions=7/165=4%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# General ('VPATH' variable) search path:
+# /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+
+# strcache buffers: 1 (0) / strings = 150 / storage = 2012 B / avg = 13 B
+# current buf: size = 8162 B / used = 2012 B / count = 150 / avg = 13 B
+
+# strcache performance: lookups = 338 / hit rate = 55%
+# hash-table stats:
+# Load=150/8192=2%, Rehash=0, Collisions=5/338=1%
+# Finished Make data base on Mon May  9 21:18:36 2022
+
+# make[1]: Leaving directory '/home/labredes/LabSisop/linuxdistro/buildroot/output/build/linux-custom'
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon May  9 21:18:36 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/labredes/.Xauthority
+# environment
+GDMSESSION = lightdm-xsession
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"5cd49c849ab40d8b4b4b1774f41ea8de.pt-br","_translationsConfigFile":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/tcf.json","_cacheRoot":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br","_resolvedLanguagePackCoreLocation":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1","_corruptedFile":"/home/labredes/.config/Code/clp/5cd49c849ab40d8b4b4b1774f41ea8de.pt-br/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# makefile (from 'Makefile', line 2)
+BUILDROOT_DIR := ../..
+# environment
+GTK_OVERLAY_SCROLLING = 0
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6bd480f2-756a-49f0-bd90-0903de6b03e0.sock
+# environment
+VSCODE_CWD = /home/labredes
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/labredes/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/labredes/.local/bin:/home/labredes/Downloads/riscv32-unknown-elf/gcc/bin:/home/labredes/Downloads/riscv32-unknown-elf/gcc/bin:/home/labredes/.local/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/examplehostname:@/tmp/.ICE-unix/1194,unix/examplehostname:/tmp/.ICE-unix/1194
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+ 
+# environment
+LINUX_OVERRIDE_SRCDIR = ~LabSisop/linuxdistro/linux-4.13.9/
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm/data/labredes
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = lightdm-xsession
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 1853
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/labredes/LabSisop/linuxdistro/buildroot/modules/hello
+# default
+.LOADED := 
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1227
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = X-Cinnamon
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/labredes
+# environment
+VSCODE_CODE_CACHE_PATH = /home/labredes/.config/Code/CachedData/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+# environment
+LOGNAME = labredes
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 3)
+KDIR := ../../output/build/linux-custom
+# makefile (from 'Makefile', line 1)
+obj-m := khello.o
+# environment
+XDG_VTNR = 7
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# environment
+XDG_SESSION_ID = 2
+# environment
+USER = labredes
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = X-Cinnamon
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = pt_BR:pt:en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-8d10aa9d-1.65.2-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PT8HOME = /opt/pt
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+CINNAMON_VERSION = 3.8.8
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 4)
+COMPILER := ../../output/host/bin/i686-buildroot-linux-uclibc-gcc
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+SBX_CHROME_API_RQ = 1
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+ 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+VSCODE_PID = 1853
+# variable set hash-table stats:
+# Load=100/1024=10%, Rehash=0, Collisions=6/136=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 4985713): 18 files, no impossibilities.
+
+# 18 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all:
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Modification time never checked.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/17=18%
+#  recipe to execute (from 'Makefile', line 7):
+	$(MAKE) -C $(KDIR) M=$$PWD
+	$(MAKE) -C $(KDIR) M=$$PWD modules_install INSTALL_MOD_PATH=../../target
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-05 08:27:41.0281213
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	rm -f *.o *.ko .*.cmd
+	rm -f modules.order
+	rm -f Module.symvers
+	rm -f khello.mod.c
+
+# files hash-table stats:
+# Load=5/1024=0%, Rehash=0, Collisions=0/18=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 24 / storage = 270 B / avg = 11 B
+# current buf: size = 8162 B / used = 270 B / count = 24 / avg = 11 B
+
+# strcache performance: lookups = 32 / hit rate = 25%
+# hash-table stats:
+# Load=24/8192=0%, Rehash=0, Collisions=1/32=3%
+# Finished Make data base on Mon May  9 21:18:36 2022
+
+ 
